@@ -1,0 +1,1 @@
+[DEMO LINK -- Coinmama-12](https://maxstetsenko.github.io/Coinmama-landing-pages/coinmama-12/dist/)
