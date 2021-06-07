@@ -125,7 +125,7 @@ $gray-text: #7d7d7d;
 	}
 	// .banner__right-text
 	&__right-text {
-		background: url("../img/bg-text.png") 0 0 no-repeat;
+		background: url("bg-text.png") 0 0 no-repeat;
 		@include sm-block {
 			background-size: contain;
 			background-position: center;
@@ -169,7 +169,7 @@ $gray-text: #7d7d7d;
 	}
 }
 .change {
-	background: url("../img/serpentine.svg") 0 0 no-repeat;
+	background: url("serpentine.svg") 0 0 no-repeat;
 	background-blend-mode: lighten;
 	background-size: 100% 100%;
 	padding: 34px 58px 33px 70px;
@@ -418,12 +418,12 @@ $gray-text: #7d7d7d;
 }
 .bitcoin-currency {
 	&:before {
-		background: url("../img/ltc.svg") 0 0 no-repeat;
+		background: url("ltc.svg") 0 0 no-repeat;
 	}
 }
 .uds-currency {
 	&:before {
-		background: url("../img/01.svg") 0 0 no-repeat;
+		background: url("01.svg") 0 0 no-repeat;
 	}
 }
 .currency {
