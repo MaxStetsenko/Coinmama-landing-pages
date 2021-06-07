@@ -1,0 +1,151 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1.3em;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	@include container();
+	@include sm(max-width, rem(510));
+	@include md(max-width, rem(690));
+	@include lg(max-width, rem(930));
+	@include xl(max-width, rem(1110));
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-family: $main-font;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.text {
+	&-center {
+		text-align: center;
+	}
+	&-right {
+		text-align: right;
+	}
+	&-left {
+		text-align: left;
+	}
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+.trans {
+	transition: 0.5s;
+}
+
+.row-flex {
+	@include row-flex();
+}
+
+.flex {
+	display: flex;
+	&-wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.j {
+	&-between {
+		justify-content: space-between;
+	}
+	&-center {
+		justify-content: center;
+	}
+}
+
+.a {
+	&-center {
+		align-items: center;
+	}
+	&-end {
+		align-items: flex-end;
+	}
+}
+
+.col {
+	@include col();
+}
+
+.w-100 {
+	width: 100%;
+}
+
+a.btn {
+}
+
+.copyright {
+	color: #000000;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+}
+
+.btn {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 90px;
+	background-color: #05b169;
+	border-radius: 10px;
+	white-space: nowrap;
+	text-align: center;
+	@include md-block {
+		padding: 0 60px;
+	}
+	@include sm-block {
+		padding: 0 10px;
+		font-size: 12px;
+		height: 40px;
+		line-height: 40px;
+		min-width: 140px;
+		border-radius: 4.33333px;
+	}
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 700;
+	@include md-block {
+		font-size: 30px;
+	}
+	@include sm-block {
+		font-size: 18px;
+	}
+}
