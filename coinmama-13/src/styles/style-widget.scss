@@ -1,0 +1,3089 @@
+// ._shadow-depth-1 {
+// 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+// 		0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+// }
+// ._shadow-depth-6 {
+// 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+// 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+// }
+// ._shadow-depth-12 {
+// 	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+// 		0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// ._text-danger {
+// 	color: #dc2a2a;
+// }
+// ._text-danger[href]:focus,
+// ._text-danger[href]:hover {
+// 	color: #dc2a2a;
+// }
+// ._bg-danger {
+// 	background-color: #dc2a2a;
+// }
+// ._border-danger {
+// 	border-color: #dc2a2a;
+// }
+// ._border-top-danger {
+// 	border-top-color: #dc2a2a;
+// }
+// ._border-bottom-danger {
+// 	border-bottom-color: #dc2a2a;
+// }
+// ._border-left-danger {
+// 	border-left-color: #dc2a2a;
+// }
+// ._border-right-danger {
+// 	border-right-color: #dc2a2a;
+// }
+// ._text-warning {
+// 	color: #ff9f1c;
+// }
+// ._text-warning[href]:focus,
+// ._text-warning[href]:hover {
+// 	color: #ff9f1c;
+// }
+// ._bg-warning {
+// 	background-color: #ff9f1c;
+// }
+// ._border-warning {
+// 	border-color: #ff9f1c;
+// }
+// ._border-top-warning {
+// 	border-top-color: #ff9f1c;
+// }
+// ._border-bottom-warning {
+// 	border-bottom-color: #ff9f1c;
+// }
+// ._border-left-warning {
+// 	border-left-color: #ff9f1c;
+// }
+// ._border-right-warning {
+// 	border-right-color: #ff9f1c;
+// }
+// ._bg-alert-danger {
+// 	background-color: #f2dede;
+// }
+// ._border-alert-danger {
+// 	border-color: #ebccd1;
+// }
+// ._bg-alert-warning {
+// 	background-color: #fcf8e3;
+// }
+// ._border-alert-warning {
+// 	border-color: #faebcc;
+// }
+// ._bg-alert-sucess {
+// 	background-color: #dff0d8;
+// }
+// ._border-alert-sucess {
+// 	border-color: #d6e9c6;
+// }
+// ._bg-alert-info {
+// 	background-color: #bce8f1;
+// }
+// ._border-alert-info {
+// 	border-color: #afdaff;
+// }
+// ._bg-orange-400 {
+// 	background-color: #ef8b0c;
+// }
+// ._bg-orange-500 {
+// 	background-color: #dc800b;
+// }
+// ._text-black {
+// 	color: #000;
+// }
+// ._text-white {
+// 	color: #fff;
+// }
+// ._bg-white {
+// 	background-color: #fff;
+// }
+// ._text-grey-200 {
+// 	color: #f3f5f8;
+// }
+// ._text-grey-200[href]:focus,
+// ._text-grey-200[href]:hover {
+// 	color: #f3f5f8;
+// }
+// ._bg-grey-200 {
+// 	background-color: #f3f5f8;
+// }
+// ._border-grey-200 {
+// 	border-color: #f3f5f8;
+// }
+// ._border-top-grey-200 {
+// 	border-top-color: #f3f5f8;
+// }
+// ._border-bottom-grey-200 {
+// 	border-bottom-color: #f3f5f8;
+// }
+// ._border-left-grey-200 {
+// 	border-left-color: #f3f5f8;
+// }
+// ._border-right-grey-200 {
+// 	border-right-color: #f3f5f8;
+// }
+// ._text-grey-300 {
+// 	color: #b5b7c3;
+// }
+// ._text-grey-300[href]:focus,
+// ._text-grey-300[href]:hover {
+// 	color: #b5b7c3;
+// }
+// ._bg-grey-300 {
+// 	background-color: #b5b7c3;
+// }
+// ._border-grey-300 {
+// 	border-color: #b5b7c3;
+// }
+// ._border-top-grey-300 {
+// 	border-top-color: #b5b7c3;
+// }
+// ._border-bottom-grey-300 {
+// 	border-bottom-color: #b5b7c3;
+// }
+// ._border-left-grey-300 {
+// 	border-left-color: #b5b7c3;
+// }
+// ._border-right-grey-300 {
+// 	border-right-color: #b5b7c3;
+// }
+// ._text-grey-400 {
+// 	color: #acacb6;
+// }
+// ._text-grey-400[href]:focus,
+// ._text-grey-400[href]:hover {
+// 	color: #acacb6;
+// }
+// ._bg-grey-400 {
+// 	background-color: #acacb6;
+// }
+// ._border-grey-400 {
+// 	border-color: #acacb6;
+// }
+// ._border-top-grey-400 {
+// 	border-top-color: #acacb6;
+// }
+// ._border-bottom-grey-400 {
+// 	border-bottom-color: #acacb6;
+// }
+// ._border-left-grey-400 {
+// 	border-left-color: #acacb6;
+// }
+// ._border-right-grey-400 {
+// 	border-right-color: #acacb6;
+// }
+// ._text-grey-600 {
+// 	color: #636371;
+// }
+// ._text-grey-600[href]:focus,
+// ._text-grey-600[href]:hover {
+// 	color: #636371;
+// }
+// ._bg-grey-600 {
+// 	background-color: #636371;
+// }
+// ._border-grey-600 {
+// 	border-color: #636371;
+// }
+// ._border-top-grey-600 {
+// 	border-top-color: #636371;
+// }
+// ._border-bottom-grey-600 {
+// 	border-bottom-color: #636371;
+// }
+// ._border-left-grey-600 {
+// 	border-left-color: #636371;
+// }
+// ._border-right-grey-600 {
+// 	border-right-color: #636371;
+// }
+// ._text-grey-700 {
+// 	color: #474959;
+// }
+// ._text-grey-700[href]:focus,
+// ._text-grey-700[href]:hover {
+// 	color: #474959;
+// }
+// ._bg-grey-700 {
+// 	background-color: #474959;
+// }
+// ._border-grey-700 {
+// 	border-color: #474959;
+// }
+// ._border-top-grey-700 {
+// 	border-top-color: #474959;
+// }
+// ._border-bottom-grey-700 {
+// 	border-bottom-color: #474959;
+// }
+// ._border-left-grey-700 {
+// 	border-left-color: #474959;
+// }
+// ._border-right-grey-700 {
+// 	border-right-color: #474959;
+// }
+// ._text-grey-800 {
+// 	color: #040000;
+// }
+// ._text-grey-800[href]:focus,
+// ._text-grey-800[href]:hover {
+// 	color: #040000;
+// }
+// ._bg-grey-800 {
+// 	background-color: #040000;
+// }
+// ._border-grey-800 {
+// 	border-color: #040000;
+// }
+// ._border-top-grey-800 {
+// 	border-top-color: #040000;
+// }
+// ._border-bottom-grey-800 {
+// 	border-bottom-color: #040000;
+// }
+// ._border-left-grey-800 {
+// 	border-left-color: #040000;
+// }
+// ._border-right-grey-800 {
+// 	border-right-color: #040000;
+// }
+// ._text-blue-100 {
+// 	color: #d9edf7;
+// }
+// ._text-blue-100[href]:focus,
+// ._text-blue-100[href]:hover {
+// 	color: #d9edf7;
+// }
+// ._bg-blue-100 {
+// 	background-color: #d9edf7;
+// }
+// ._border-blue-100 {
+// 	border-color: #d9edf7;
+// }
+// ._border-top-blue-100 {
+// 	border-top-color: #d9edf7;
+// }
+// ._border-bottom-blue-100 {
+// 	border-bottom-color: #d9edf7;
+// }
+// ._border-left-blue-100 {
+// 	border-left-color: #d9edf7;
+// }
+// ._border-right-blue-100 {
+// 	border-right-color: #d9edf7;
+// }
+// ._text-blue-200 {
+// 	color: #bce8f1;
+// }
+// ._text-blue-200[href]:focus,
+// ._text-blue-200[href]:hover {
+// 	color: #bce8f1;
+// }
+// ._bg-blue-200 {
+// 	background-color: #bce8f1 !important;
+// }
+// ._border-blue-200 {
+// 	border-color: #bce8f1;
+// }
+// ._border-top-blue-200 {
+// 	border-top-color: #bce8f1;
+// }
+// ._border-bottom-blue-200 {
+// 	border-bottom-color: #bce8f1;
+// }
+// ._border-left-blue-200 {
+// 	border-left-color: #bce8f1;
+// }
+// ._border-right-blue-200 {
+// 	border-right-color: #bce8f1;
+// }
+// ._text-blue-300 {
+// 	color: #afdaff;
+// }
+// ._text-blue-300[href]:focus,
+// ._text-blue-300[href]:hover {
+// 	color: #afdaff;
+// }
+// ._bg-blue-300 {
+// 	background-color: #afdaff !important;
+// }
+// ._border-blue-300 {
+// 	border-color: #afdaff;
+// }
+// ._border-top-blue-300 {
+// 	border-top-color: #afdaff;
+// }
+// ._border-bottom-blue-300 {
+// 	border-bottom-color: #afdaff;
+// }
+// ._border-left-blue-300 {
+// 	border-left-color: #afdaff;
+// }
+// ._border-right-blue-300 {
+// 	border-right-color: #afdaff;
+// }
+// ._bg-blue-400 {
+// 	background-color: #8fcbff !important;
+// }
+// ._text-blue-500 {
+// 	color: #0f8fff;
+// }
+// ._text-blue-500[href]:focus,
+// ._text-blue-500[href]:hover {
+// 	color: #0f8fff;
+// }
+// ._bg-blue-500 {
+// 	background-color: #0f8fff;
+// }
+// ._border-blue-500 {
+// 	border-color: #0f8fff;
+// }
+// ._border-top-blue-500 {
+// 	border-top-color: #0f8fff;
+// }
+// ._border-bottom-blue-500 {
+// 	border-bottom-color: #0f8fff;
+// }
+// ._border-left-blue-500 {
+// 	border-left-color: #0f8fff;
+// }
+// ._border-right-blue-500 {
+// 	border-right-color: #0f8fff;
+// }
+// ._text-blue-600 {
+// 	color: #127de8;
+// }
+// ._text-blue-600[href]:focus,
+// ._text-blue-600[href]:hover {
+// 	color: #127de8;
+// }
+// ._bg-blue-600 {
+// 	background-color: #127de8 !important;
+// }
+// ._border-blue-600 {
+// 	border-color: #127de8;
+// }
+// ._border-top-blue-600 {
+// 	border-top-color: #127de8;
+// }
+// ._border-bottom-blue-600 {
+// 	border-bottom-color: #127de8;
+// }
+// ._border-left-blue-600 {
+// 	border-left-color: #127de8;
+// }
+// ._border-right-blue-600 {
+// 	border-right-color: #127de8;
+// }
+// ._text-blue-800 {
+// 	color: #1f2374;
+// }
+// ._text-blue-800[href]:focus,
+// ._text-blue-800[href]:hover {
+// 	color: #1f2374;
+// }
+// ._bg-blue-800 {
+// 	background-color: #1f2374;
+// }
+// ._border-blue-800 {
+// 	border-color: #1f2374;
+// }
+// ._border-top-blue-800 {
+// 	border-top-color: #1f2374;
+// }
+// ._border-bottom-blue-800 {
+// 	border-bottom-color: #1f2374;
+// }
+// ._border-left-blue-800 {
+// 	border-left-color: #1f2374;
+// }
+// ._border-right-blue-800 {
+// 	border-right-color: #1f2374;
+// }
+// ._text-zengo {
+// 	color: #35c4ba !important;
+// }
+// ._bg-loyalty-program-primary {
+// 	background-color: #cfe9ff !important;
+// }
+// .printable * {
+// 	display: none;
+// }
+// @media print {
+// 	.printable * {
+// 		display: block !important;
+// 	}
+// }
+// @media print {
+// 	.no-print,
+// 	.no-print * {
+// 		display: none !important;
+// 	}
+// }
+// .margin-auto {
+// 	margin: 0 auto;
+// }
+// #widgetComponentContainerOnSellPage .widgetDropdownInput .wrapperIcon .icon {
+// 	margin-left: 10px;
+// }
+// .widgetDropdownInput {
+// 	height: 45px;
+// 	border-radius: 4px;
+// 	overflow: hidden;
+// 	background-color: #f3f5f8;
+// 	margin-right: 2px;
+// 	width: 310px;
+// }
+// .widgetDropdownInput .wrapperIcon {
+// 	background-color: #f3f5f8;
+// 	height: inherit;
+// 	width: 50px;
+// 	display: inline-block;
+// }
+// .widgetDropdownInput .wrapperIcon .icon {
+// 	height: inherit;
+// 	vertical-align: middle;
+// 	padding: 0 1px 0 5px;
+// 	width: 32px;
+// 	margin-bottom: 5px;
+// }
+// .widgetDropdownInput .inputElem {
+// 	font-size: 15px;
+// 	font-family: "Open Sans", Arial, sans-serif;
+// 	background-color: #f3f5f8;
+// 	color: #040000;
+// 	height: 47px;
+// 	font-family: "Cabin", Arial, sans-serif;
+// 	width: 180px;
+// 	border-width: 0px;
+// 	border: none;
+// 	-webkit-appearance: none;
+// 	-moz-appearance: textfield;
+// }
+// .widgetDropdownInput .ddToggler {
+// 	height: inherit;
+// 	vertical-align: middle;
+// 	display: inline-block;
+// 	background-color: #f3f5f8 !important;
+// 	border-radius: 0 4px 4px 0;
+// 	width: 76px;
+// 	margin-bottom: 5px;
+// 	float: right;
+// }
+// @media only screen and (min-width: 1200px) {
+// 	.widgetDropdownInput .ddToggler {
+// 		margin-right: 3px;
+// 	}
+// }
+// .widgetDropdownInput .ddToggler:hover {
+// 	cursor: pointer;
+// }
+// .widgetDropdownInput .ddToggler .togglerContent {
+// 	display: flex;
+// 	height: inherit;
+// 	justify-content: center;
+// 	align-items: center;
+// 	color: #0f8fff;
+// 	border-radius: 0 4px 4px 0;
+// 	font-family: "Cabin", Arial, sans-serif;
+// 	font-size: 13px;
+// 	font-weight: bold;
+// 	line-height: 22px;
+// }
+// .widgetDropdownInput .ddToggler .togglerContent img {
+// 	padding-left: 5px;
+// 	height: 7px;
+// }
+// .widgetDropdownInput .ddToggler .togglerContent span {
+// 	font-weight: bold;
+// }
+// .widgetDropdownInput .chevronBottom::before {
+// 	border-style: solid;
+// 	border-width: 0.16em 0.16em 0 0;
+// 	content: "";
+// 	display: inline-block;
+// 	height: 0.5em;
+// 	left: 0.5em;
+// 	position: relative;
+// 	vertical-align: top;
+// 	width: 0.5em;
+// 	top: 6px;
+// 	transform: rotate(135deg);
+// }
+// .widgetDropdownInput input::-webkit-outer-spin-button,
+// .widgetDropdownInput input::-webkit-inner-spin-button {
+// 	-webkit-appearance: none;
+// 	margin: 0;
+// }
+// .widgetDropdownInput input[type="number"] {
+// 	-moz-appearance: textfield;
+// }
+// .dropdownInputErrors {
+// 	margin: 0 auto;
+// 	position: absolute;
+// 	margin-top: 43px;
+// 	font-size: 10px;
+// 	margin-left: 20px;
+// }
+// #widgetComponentContainerOnSellPage .dropdownInputErrors {
+// 	margin-top: 154px !important;
+// }
+
+// .printable * {
+// 	display: none;
+// }
+// @media print {
+// 	.printable * {
+// 		display: block !important;
+// 	}
+// }
+// @media print {
+// 	.no-print,
+// 	.no-print * {
+// 		display: none !important;
+// 	}
+// }
+// .margin-auto {
+// 	margin: 0 auto;
+// }
+// ._shadow-depth-1 {
+// 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+// 		0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+// }
+// ._shadow-depth-6 {
+// 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+// 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+// }
+// ._shadow-depth-12 {
+// 	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+// 		0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// ._text-danger {
+// 	color: #dc2a2a;
+// }
+// ._text-danger[href]:focus,
+// ._text-danger[href]:hover {
+// 	color: #dc2a2a;
+// }
+// ._bg-danger {
+// 	background-color: #dc2a2a;
+// }
+// ._border-danger {
+// 	border-color: #dc2a2a;
+// }
+// ._border-top-danger {
+// 	border-top-color: #dc2a2a;
+// }
+// ._border-bottom-danger {
+// 	border-bottom-color: #dc2a2a;
+// }
+// ._border-left-danger {
+// 	border-left-color: #dc2a2a;
+// }
+// ._border-right-danger {
+// 	border-right-color: #dc2a2a;
+// }
+// ._text-warning {
+// 	color: #ff9f1c;
+// }
+// ._text-warning[href]:focus,
+// ._text-warning[href]:hover {
+// 	color: #ff9f1c;
+// }
+// ._bg-warning {
+// 	background-color: #ff9f1c;
+// }
+// ._border-warning {
+// 	border-color: #ff9f1c;
+// }
+// ._border-top-warning {
+// 	border-top-color: #ff9f1c;
+// }
+// ._border-bottom-warning {
+// 	border-bottom-color: #ff9f1c;
+// }
+// ._border-left-warning {
+// 	border-left-color: #ff9f1c;
+// }
+// ._border-right-warning {
+// 	border-right-color: #ff9f1c;
+// }
+// ._bg-alert-danger {
+// 	background-color: #f2dede;
+// }
+// ._border-alert-danger {
+// 	border-color: #ebccd1;
+// }
+// ._bg-alert-warning {
+// 	background-color: #fcf8e3;
+// }
+// ._border-alert-warning {
+// 	border-color: #faebcc;
+// }
+// ._bg-alert-sucess {
+// 	background-color: #dff0d8;
+// }
+// ._border-alert-sucess {
+// 	border-color: #d6e9c6;
+// }
+// ._bg-alert-info {
+// 	background-color: #bce8f1;
+// }
+// ._border-alert-info {
+// 	border-color: #afdaff;
+// }
+// ._bg-orange-400 {
+// 	background-color: #ef8b0c;
+// }
+// ._bg-orange-500 {
+// 	background-color: #dc800b;
+// }
+// ._text-black {
+// 	color: #000;
+// }
+// ._text-white {
+// 	color: #fff;
+// }
+// ._bg-white {
+// 	background-color: #fff;
+// }
+// ._text-grey-200 {
+// 	color: #f3f5f8;
+// }
+// ._text-grey-200[href]:focus,
+// ._text-grey-200[href]:hover {
+// 	color: #f3f5f8;
+// }
+// ._bg-grey-200 {
+// 	background-color: #f3f5f8;
+// }
+// ._border-grey-200 {
+// 	border-color: #f3f5f8;
+// }
+// ._border-top-grey-200 {
+// 	border-top-color: #f3f5f8;
+// }
+// ._border-bottom-grey-200 {
+// 	border-bottom-color: #f3f5f8;
+// }
+// ._border-left-grey-200 {
+// 	border-left-color: #f3f5f8;
+// }
+// ._border-right-grey-200 {
+// 	border-right-color: #f3f5f8;
+// }
+// ._text-grey-300 {
+// 	color: #b5b7c3;
+// }
+// ._text-grey-300[href]:focus,
+// ._text-grey-300[href]:hover {
+// 	color: #b5b7c3;
+// }
+// ._bg-grey-300 {
+// 	background-color: #b5b7c3;
+// }
+// ._border-grey-300 {
+// 	border-color: #b5b7c3;
+// }
+// ._border-top-grey-300 {
+// 	border-top-color: #b5b7c3;
+// }
+// ._border-bottom-grey-300 {
+// 	border-bottom-color: #b5b7c3;
+// }
+// ._border-left-grey-300 {
+// 	border-left-color: #b5b7c3;
+// }
+// ._border-right-grey-300 {
+// 	border-right-color: #b5b7c3;
+// }
+// ._text-grey-400 {
+// 	color: #acacb6;
+// }
+// ._text-grey-400[href]:focus,
+// ._text-grey-400[href]:hover {
+// 	color: #acacb6;
+// }
+// ._bg-grey-400 {
+// 	background-color: #acacb6;
+// }
+// ._border-grey-400 {
+// 	border-color: #acacb6;
+// }
+// ._border-top-grey-400 {
+// 	border-top-color: #acacb6;
+// }
+// ._border-bottom-grey-400 {
+// 	border-bottom-color: #acacb6;
+// }
+// ._border-left-grey-400 {
+// 	border-left-color: #acacb6;
+// }
+// ._border-right-grey-400 {
+// 	border-right-color: #acacb6;
+// }
+// ._text-grey-600 {
+// 	color: #636371;
+// }
+// ._text-grey-600[href]:focus,
+// ._text-grey-600[href]:hover {
+// 	color: #636371;
+// }
+// ._bg-grey-600 {
+// 	background-color: #636371;
+// }
+// ._border-grey-600 {
+// 	border-color: #636371;
+// }
+// ._border-top-grey-600 {
+// 	border-top-color: #636371;
+// }
+// ._border-bottom-grey-600 {
+// 	border-bottom-color: #636371;
+// }
+// ._border-left-grey-600 {
+// 	border-left-color: #636371;
+// }
+// ._border-right-grey-600 {
+// 	border-right-color: #636371;
+// }
+// ._text-grey-700 {
+// 	color: #474959;
+// }
+// ._text-grey-700[href]:focus,
+// ._text-grey-700[href]:hover {
+// 	color: #474959;
+// }
+// ._bg-grey-700 {
+// 	background-color: #474959;
+// }
+// ._border-grey-700 {
+// 	border-color: #474959;
+// }
+// ._border-top-grey-700 {
+// 	border-top-color: #474959;
+// }
+// ._border-bottom-grey-700 {
+// 	border-bottom-color: #474959;
+// }
+// ._border-left-grey-700 {
+// 	border-left-color: #474959;
+// }
+// ._border-right-grey-700 {
+// 	border-right-color: #474959;
+// }
+// ._text-grey-800 {
+// 	color: #040000;
+// }
+// ._text-grey-800[href]:focus,
+// ._text-grey-800[href]:hover {
+// 	color: #040000;
+// }
+// ._bg-grey-800 {
+// 	background-color: #040000;
+// }
+// ._border-grey-800 {
+// 	border-color: #040000;
+// }
+// ._border-top-grey-800 {
+// 	border-top-color: #040000;
+// }
+// ._border-bottom-grey-800 {
+// 	border-bottom-color: #040000;
+// }
+// ._border-left-grey-800 {
+// 	border-left-color: #040000;
+// }
+// ._border-right-grey-800 {
+// 	border-right-color: #040000;
+// }
+// ._text-blue-100 {
+// 	color: #d9edf7;
+// }
+// ._text-blue-100[href]:focus,
+// ._text-blue-100[href]:hover {
+// 	color: #d9edf7;
+// }
+// ._bg-blue-100 {
+// 	background-color: #d9edf7;
+// }
+// ._border-blue-100 {
+// 	border-color: #d9edf7;
+// }
+// ._border-top-blue-100 {
+// 	border-top-color: #d9edf7;
+// }
+// ._border-bottom-blue-100 {
+// 	border-bottom-color: #d9edf7;
+// }
+// ._border-left-blue-100 {
+// 	border-left-color: #d9edf7;
+// }
+// ._border-right-blue-100 {
+// 	border-right-color: #d9edf7;
+// }
+// ._text-blue-200 {
+// 	color: #bce8f1;
+// }
+// ._text-blue-200[href]:focus,
+// ._text-blue-200[href]:hover {
+// 	color: #bce8f1;
+// }
+// ._bg-blue-200 {
+// 	background-color: #bce8f1 !important;
+// }
+// ._border-blue-200 {
+// 	border-color: #bce8f1;
+// }
+// ._border-top-blue-200 {
+// 	border-top-color: #bce8f1;
+// }
+// ._border-bottom-blue-200 {
+// 	border-bottom-color: #bce8f1;
+// }
+// ._border-left-blue-200 {
+// 	border-left-color: #bce8f1;
+// }
+// ._border-right-blue-200 {
+// 	border-right-color: #bce8f1;
+// }
+// ._text-blue-300 {
+// 	color: #afdaff;
+// }
+// ._text-blue-300[href]:focus,
+// ._text-blue-300[href]:hover {
+// 	color: #afdaff;
+// }
+// ._bg-blue-300 {
+// 	background-color: #afdaff !important;
+// }
+// ._border-blue-300 {
+// 	border-color: #afdaff;
+// }
+// ._border-top-blue-300 {
+// 	border-top-color: #afdaff;
+// }
+// ._border-bottom-blue-300 {
+// 	border-bottom-color: #afdaff;
+// }
+// ._border-left-blue-300 {
+// 	border-left-color: #afdaff;
+// }
+// ._border-right-blue-300 {
+// 	border-right-color: #afdaff;
+// }
+// ._bg-blue-400 {
+// 	background-color: #8fcbff !important;
+// }
+// ._text-blue-500 {
+// 	color: #0f8fff;
+// }
+// ._text-blue-500[href]:focus,
+// ._text-blue-500[href]:hover {
+// 	color: #0f8fff;
+// }
+// ._bg-blue-500 {
+// 	background-color: #0f8fff;
+// }
+// ._border-blue-500 {
+// 	border-color: #0f8fff;
+// }
+// ._border-top-blue-500 {
+// 	border-top-color: #0f8fff;
+// }
+// ._border-bottom-blue-500 {
+// 	border-bottom-color: #0f8fff;
+// }
+// ._border-left-blue-500 {
+// 	border-left-color: #0f8fff;
+// }
+// ._border-right-blue-500 {
+// 	border-right-color: #0f8fff;
+// }
+// ._text-blue-600 {
+// 	color: #127de8;
+// }
+// ._text-blue-600[href]:focus,
+// ._text-blue-600[href]:hover {
+// 	color: #127de8;
+// }
+// ._bg-blue-600 {
+// 	background-color: #127de8 !important;
+// }
+// ._border-blue-600 {
+// 	border-color: #127de8;
+// }
+// ._border-top-blue-600 {
+// 	border-top-color: #127de8;
+// }
+// ._border-bottom-blue-600 {
+// 	border-bottom-color: #127de8;
+// }
+// ._border-left-blue-600 {
+// 	border-left-color: #127de8;
+// }
+// ._border-right-blue-600 {
+// 	border-right-color: #127de8;
+// }
+// ._text-blue-800 {
+// 	color: #1f2374;
+// }
+// ._text-blue-800[href]:focus,
+// ._text-blue-800[href]:hover {
+// 	color: #1f2374;
+// }
+// ._bg-blue-800 {
+// 	background-color: #1f2374;
+// }
+// ._border-blue-800 {
+// 	border-color: #1f2374;
+// }
+// ._border-top-blue-800 {
+// 	border-top-color: #1f2374;
+// }
+// ._border-bottom-blue-800 {
+// 	border-bottom-color: #1f2374;
+// }
+// ._border-left-blue-800 {
+// 	border-left-color: #1f2374;
+// }
+// ._border-right-blue-800 {
+// 	border-right-color: #1f2374;
+// }
+// ._text-zengo {
+// 	color: #35c4ba !important;
+// }
+// ._bg-loyalty-program-primary {
+// 	background-color: #cfe9ff !important;
+// }
+// .itemsWrapper {
+// 	z-index: 1040;
+// }
+// @media only screen and (max-width: 425px) {
+// 	.itemsWrapper {
+// 		position: fixed;
+// 		display: block;
+// 		top: 0;
+// 		left: 0;
+// 		max-height: 100%;
+// 		overflow-y: auto;
+// 	}
+// }
+// @media only screen and (max-width: under_small_medium) {
+// 	.itemsWrapper {
+// 		position: fixed;
+// 		display: block;
+// 		top: 0;
+// 		left: 0;
+// 		max-height: 100%;
+// 		overflow-y: auto;
+// 	}
+// }
+// .itemsWrapper .ulClassList {
+// 	width: 310px;
+// 	max-width: 320px;
+// 	position: absolute;
+// 	margin-top: 10px;
+// 	list-style-type: none;
+// 	padding-left: 0;
+// 	background-color: #fff;
+// 	border-radius: 2.4px;
+// 	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+// 	border: 1px solid rgba(0, 0, 0, 0.15);
+// 	overflow: hidden;
+// 	float: right;
+// }
+// @media only screen and (max-width: 425px) {
+// 	.itemsWrapper .ulClassList {
+// 		width: 100%;
+// 		border: none !important;
+// 	}
+// }
+// @media only screen and (max-width: under_small_medium) {
+// 	.itemsWrapper .ulClassList {
+// 		width: 100%;
+// 		border: none !important;
+// 	}
+// }
+// @media only screen and (min-width: 1200px) {
+// 	.itemsWrapper .ulClassList {
+// 		right: 47px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	.itemsWrapper .ulClassList {
+// 		right: 10px;
+// 	}
+// }
+// .itemsWrapper .ulClassList li {
+// 	background-color: inherit;
+// 	display: flex;
+// 	align-items: center;
+// 	height: 40px;
+// 	padding-left: 15px;
+// 	cursor: pointer;
+// }
+// @media only screen and (max-width: 425px) {
+// 	.itemsWrapper .ulClassList li {
+// 		height: 60px !important;
+// 	}
+// }
+// @media only screen and (max-width: under_small_medium) {
+// 	.itemsWrapper .ulClassList li {
+// 		height: 60px !important;
+// 	}
+// }
+// .itemsWrapper .ulClassList li:hover span {
+// 	font-weight: bold;
+// }
+// .itemsWrapper .ulClassList li img {
+// 	max-width: 22px;
+// 	float: left;
+// }
+// @media only screen and (max-width: 425px) {
+// 	.itemsWrapper .ulClassList li img {
+// 		max-width: 40px !important;
+// 	}
+// }
+// @media only screen and (max-width: under_small_medium) {
+// 	.itemsWrapper .ulClassList li img {
+// 		max-width: 40px !important;
+// 	}
+// }
+// .itemsWrapper .ulClassList li span {
+// 	font-family: "Open Sans";
+// 	padding-left: 20px;
+// 	font-size: 15px;
+// 	color: #474959;
+// }
+// @media only screen and (max-width: 425px) {
+// 	.itemsWrapper .ulClassList {
+// 		height: 100%;
+// 		width: 100%;
+// 		position: relative;
+// 		z-index: 1040;
+// 		left: 0;
+// 		top: 0;
+// 		max-width: unset;
+// 		margin-top: 0;
+// 	}
+// 	.itemsWrapper .ulClassList .closeMobileDropdown {
+// 		height: 70px;
+// 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+// 		top: 0px;
+// 		text-align: left;
+// 		padding-top: 2px;
+// 		padding-left: 13px;
+// 		background-color: #1f2374;
+// 		color: white;
+// 		width: 100vw;
+// 		display: flex;
+// 		align-items: center;
+// 		padding-bottom: 5px;
+// 	}
+// }
+// @media only screen and (max-width: under_small_medium) {
+// 	.itemsWrapper .ulClassList {
+// 		height: 100%;
+// 		width: 100%;
+// 		position: relative;
+// 		z-index: 1040;
+// 		left: 0;
+// 		top: 0;
+// 		max-width: unset;
+// 		margin-top: 0;
+// 	}
+// 	.itemsWrapper .ulClassList .closeMobileDropdown {
+// 		height: 70px;
+// 		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+// 		top: 0px;
+// 		text-align: left;
+// 		padding-top: 2px;
+// 		padding-left: 13px;
+// 		background-color: #1f2374;
+// 		color: white;
+// 		width: 100vw;
+// 		display: flex;
+// 		align-items: center;
+// 		padding-bottom: 5px;
+// 	}
+// }
+
+// ._shadow-depth-1 {
+// 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+// 		0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+// }
+// ._shadow-depth-6 {
+// 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+// 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+// }
+// ._shadow-depth-12 {
+// 	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+// 		0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// ._text-danger {
+// 	color: #dc2a2a;
+// }
+// ._text-danger[href]:focus,
+// ._text-danger[href]:hover {
+// 	color: #dc2a2a;
+// }
+// ._bg-danger {
+// 	background-color: #dc2a2a;
+// }
+// ._border-danger {
+// 	border-color: #dc2a2a;
+// }
+// ._border-top-danger {
+// 	border-top-color: #dc2a2a;
+// }
+// ._border-bottom-danger {
+// 	border-bottom-color: #dc2a2a;
+// }
+// ._border-left-danger {
+// 	border-left-color: #dc2a2a;
+// }
+// ._border-right-danger {
+// 	border-right-color: #dc2a2a;
+// }
+// ._text-warning {
+// 	color: #ff9f1c;
+// }
+// ._text-warning[href]:focus,
+// ._text-warning[href]:hover {
+// 	color: #ff9f1c;
+// }
+// ._bg-warning {
+// 	background-color: #ff9f1c;
+// }
+// ._border-warning {
+// 	border-color: #ff9f1c;
+// }
+// ._border-top-warning {
+// 	border-top-color: #ff9f1c;
+// }
+// ._border-bottom-warning {
+// 	border-bottom-color: #ff9f1c;
+// }
+// ._border-left-warning {
+// 	border-left-color: #ff9f1c;
+// }
+// ._border-right-warning {
+// 	border-right-color: #ff9f1c;
+// }
+// ._bg-alert-danger {
+// 	background-color: #f2dede;
+// }
+// ._border-alert-danger {
+// 	border-color: #ebccd1;
+// }
+// ._bg-alert-warning {
+// 	background-color: #fcf8e3;
+// }
+// ._border-alert-warning {
+// 	border-color: #faebcc;
+// }
+// ._bg-alert-sucess {
+// 	background-color: #dff0d8;
+// }
+// ._border-alert-sucess {
+// 	border-color: #d6e9c6;
+// }
+// ._bg-alert-info {
+// 	background-color: #bce8f1;
+// }
+// ._border-alert-info {
+// 	border-color: #afdaff;
+// }
+// ._bg-orange-400 {
+// 	background-color: #ef8b0c;
+// }
+// ._bg-orange-500 {
+// 	background-color: #dc800b;
+// }
+// ._text-black {
+// 	color: #000;
+// }
+// ._text-white {
+// 	color: #fff;
+// }
+// ._bg-white {
+// 	background-color: #fff;
+// }
+// ._text-grey-200 {
+// 	color: #f3f5f8;
+// }
+// ._text-grey-200[href]:focus,
+// ._text-grey-200[href]:hover {
+// 	color: #f3f5f8;
+// }
+// ._bg-grey-200 {
+// 	background-color: #f3f5f8;
+// }
+// ._border-grey-200 {
+// 	border-color: #f3f5f8;
+// }
+// ._border-top-grey-200 {
+// 	border-top-color: #f3f5f8;
+// }
+// ._border-bottom-grey-200 {
+// 	border-bottom-color: #f3f5f8;
+// }
+// ._border-left-grey-200 {
+// 	border-left-color: #f3f5f8;
+// }
+// ._border-right-grey-200 {
+// 	border-right-color: #f3f5f8;
+// }
+// ._text-grey-300 {
+// 	color: #b5b7c3;
+// }
+// ._text-grey-300[href]:focus,
+// ._text-grey-300[href]:hover {
+// 	color: #b5b7c3;
+// }
+// ._bg-grey-300 {
+// 	background-color: #b5b7c3;
+// }
+// ._border-grey-300 {
+// 	border-color: #b5b7c3;
+// }
+// ._border-top-grey-300 {
+// 	border-top-color: #b5b7c3;
+// }
+// ._border-bottom-grey-300 {
+// 	border-bottom-color: #b5b7c3;
+// }
+// ._border-left-grey-300 {
+// 	border-left-color: #b5b7c3;
+// }
+// ._border-right-grey-300 {
+// 	border-right-color: #b5b7c3;
+// }
+// ._text-grey-400 {
+// 	color: #acacb6;
+// }
+// ._text-grey-400[href]:focus,
+// ._text-grey-400[href]:hover {
+// 	color: #acacb6;
+// }
+// ._bg-grey-400 {
+// 	background-color: #acacb6;
+// }
+// ._border-grey-400 {
+// 	border-color: #acacb6;
+// }
+// ._border-top-grey-400 {
+// 	border-top-color: #acacb6;
+// }
+// ._border-bottom-grey-400 {
+// 	border-bottom-color: #acacb6;
+// }
+// ._border-left-grey-400 {
+// 	border-left-color: #acacb6;
+// }
+// ._border-right-grey-400 {
+// 	border-right-color: #acacb6;
+// }
+// ._text-grey-600 {
+// 	color: #636371;
+// }
+// ._text-grey-600[href]:focus,
+// ._text-grey-600[href]:hover {
+// 	color: #636371;
+// }
+// ._bg-grey-600 {
+// 	background-color: #636371;
+// }
+// ._border-grey-600 {
+// 	border-color: #636371;
+// }
+// ._border-top-grey-600 {
+// 	border-top-color: #636371;
+// }
+// ._border-bottom-grey-600 {
+// 	border-bottom-color: #636371;
+// }
+// ._border-left-grey-600 {
+// 	border-left-color: #636371;
+// }
+// ._border-right-grey-600 {
+// 	border-right-color: #636371;
+// }
+// ._text-grey-700 {
+// 	color: #474959;
+// }
+// ._text-grey-700[href]:focus,
+// ._text-grey-700[href]:hover {
+// 	color: #474959;
+// }
+// ._bg-grey-700 {
+// 	background-color: #474959;
+// }
+// ._border-grey-700 {
+// 	border-color: #474959;
+// }
+// ._border-top-grey-700 {
+// 	border-top-color: #474959;
+// }
+// ._border-bottom-grey-700 {
+// 	border-bottom-color: #474959;
+// }
+// ._border-left-grey-700 {
+// 	border-left-color: #474959;
+// }
+// ._border-right-grey-700 {
+// 	border-right-color: #474959;
+// }
+// ._text-grey-800 {
+// 	color: #040000;
+// }
+// ._text-grey-800[href]:focus,
+// ._text-grey-800[href]:hover {
+// 	color: #040000;
+// }
+// ._bg-grey-800 {
+// 	background-color: #040000;
+// }
+// ._border-grey-800 {
+// 	border-color: #040000;
+// }
+// ._border-top-grey-800 {
+// 	border-top-color: #040000;
+// }
+// ._border-bottom-grey-800 {
+// 	border-bottom-color: #040000;
+// }
+// ._border-left-grey-800 {
+// 	border-left-color: #040000;
+// }
+// ._border-right-grey-800 {
+// 	border-right-color: #040000;
+// }
+// ._text-blue-100 {
+// 	color: #d9edf7;
+// }
+// ._text-blue-100[href]:focus,
+// ._text-blue-100[href]:hover {
+// 	color: #d9edf7;
+// }
+// ._bg-blue-100 {
+// 	background-color: #d9edf7;
+// }
+// ._border-blue-100 {
+// 	border-color: #d9edf7;
+// }
+// ._border-top-blue-100 {
+// 	border-top-color: #d9edf7;
+// }
+// ._border-bottom-blue-100 {
+// 	border-bottom-color: #d9edf7;
+// }
+// ._border-left-blue-100 {
+// 	border-left-color: #d9edf7;
+// }
+// ._border-right-blue-100 {
+// 	border-right-color: #d9edf7;
+// }
+// ._text-blue-200 {
+// 	color: #bce8f1;
+// }
+// ._text-blue-200[href]:focus,
+// ._text-blue-200[href]:hover {
+// 	color: #bce8f1;
+// }
+// ._bg-blue-200 {
+// 	background-color: #bce8f1 !important;
+// }
+// ._border-blue-200 {
+// 	border-color: #bce8f1;
+// }
+// ._border-top-blue-200 {
+// 	border-top-color: #bce8f1;
+// }
+// ._border-bottom-blue-200 {
+// 	border-bottom-color: #bce8f1;
+// }
+// ._border-left-blue-200 {
+// 	border-left-color: #bce8f1;
+// }
+// ._border-right-blue-200 {
+// 	border-right-color: #bce8f1;
+// }
+// ._text-blue-300 {
+// 	color: #afdaff;
+// }
+// ._text-blue-300[href]:focus,
+// ._text-blue-300[href]:hover {
+// 	color: #afdaff;
+// }
+// ._bg-blue-300 {
+// 	background-color: #afdaff !important;
+// }
+// ._border-blue-300 {
+// 	border-color: #afdaff;
+// }
+// ._border-top-blue-300 {
+// 	border-top-color: #afdaff;
+// }
+// ._border-bottom-blue-300 {
+// 	border-bottom-color: #afdaff;
+// }
+// ._border-left-blue-300 {
+// 	border-left-color: #afdaff;
+// }
+// ._border-right-blue-300 {
+// 	border-right-color: #afdaff;
+// }
+// ._bg-blue-400 {
+// 	background-color: #8fcbff !important;
+// }
+// ._text-blue-500 {
+// 	color: #0f8fff;
+// }
+// ._text-blue-500[href]:focus,
+// ._text-blue-500[href]:hover {
+// 	color: #0f8fff;
+// }
+// ._bg-blue-500 {
+// 	background-color: #0f8fff;
+// }
+// ._border-blue-500 {
+// 	border-color: #0f8fff;
+// }
+// ._border-top-blue-500 {
+// 	border-top-color: #0f8fff;
+// }
+// ._border-bottom-blue-500 {
+// 	border-bottom-color: #0f8fff;
+// }
+// ._border-left-blue-500 {
+// 	border-left-color: #0f8fff;
+// }
+// ._border-right-blue-500 {
+// 	border-right-color: #0f8fff;
+// }
+// ._text-blue-600 {
+// 	color: #127de8;
+// }
+// ._text-blue-600[href]:focus,
+// ._text-blue-600[href]:hover {
+// 	color: #127de8;
+// }
+// ._bg-blue-600 {
+// 	background-color: #127de8 !important;
+// }
+// ._border-blue-600 {
+// 	border-color: #127de8;
+// }
+// ._border-top-blue-600 {
+// 	border-top-color: #127de8;
+// }
+// ._border-bottom-blue-600 {
+// 	border-bottom-color: #127de8;
+// }
+// ._border-left-blue-600 {
+// 	border-left-color: #127de8;
+// }
+// ._border-right-blue-600 {
+// 	border-right-color: #127de8;
+// }
+// ._text-blue-800 {
+// 	color: #1f2374;
+// }
+// ._text-blue-800[href]:focus,
+// ._text-blue-800[href]:hover {
+// 	color: #1f2374;
+// }
+// ._bg-blue-800 {
+// 	background-color: #1f2374;
+// }
+// ._border-blue-800 {
+// 	border-color: #1f2374;
+// }
+// ._border-top-blue-800 {
+// 	border-top-color: #1f2374;
+// }
+// ._border-bottom-blue-800 {
+// 	border-bottom-color: #1f2374;
+// }
+// ._border-left-blue-800 {
+// 	border-left-color: #1f2374;
+// }
+// ._border-right-blue-800 {
+// 	border-right-color: #1f2374;
+// }
+// ._text-zengo {
+// 	color: #35c4ba !important;
+// }
+// ._bg-loyalty-program-primary {
+// 	background-color: #cfe9ff !important;
+// }
+// .tab-list {
+// 	border-radius: 4px 4px 0 0;
+// 	padding-left: 0;
+// 	border: none;
+// }
+// .tab-list-item {
+// 	background-image: linear-gradient(#fff, #f2f2f2);
+// 	height: 50px;
+// 	padding-top: 13px;
+// 	text-align: center;
+// 	display: inline-block;
+// 	list-style: none;
+// 	margin-bottom: -1px;
+// 	cursor: pointer;
+// 	font-family: "Open Sans";
+// 	font-weight: bold;
+// 	font-size: 18px;
+// 	border-radius: 4px 4px 0 0;
+// }
+// .tab-list-item:first-child {
+// 	box-shadow: inset -13px 0 34px -21px rgba(0, 0, 0, 0.2);
+// }
+// .tab-list-item:last-child {
+// 	box-shadow: inset 13px 0 34px -21px rgba(0, 0, 0, 0.2);
+// }
+// .tab-list-active {
+// 	border-bottom: solid 3px #0f8fff;
+// 	color: #0f8fff;
+// 	box-shadow: none !important;
+// 	cursor: default;
+// }
+
+// .printable * {
+// 	display: none;
+// }
+// @media print {
+// 	.printable * {
+// 		display: block !important;
+// 	}
+// }
+// @media print {
+// 	.no-print,
+// 	.no-print * {
+// 		display: none !important;
+// 	}
+// }
+// .margin-auto {
+// 	margin: 0 auto;
+// }
+// ._shadow-depth-1 {
+// 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+// 		0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+// }
+// ._shadow-depth-6 {
+// 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+// 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+// }
+// ._shadow-depth-12 {
+// 	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+// 		0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// ._text-danger {
+// 	color: #dc2a2a;
+// }
+// ._text-danger[href]:focus,
+// ._text-danger[href]:hover {
+// 	color: #dc2a2a;
+// }
+// ._bg-danger {
+// 	background-color: #dc2a2a;
+// }
+// ._border-danger {
+// 	border-color: #dc2a2a;
+// }
+// ._border-top-danger {
+// 	border-top-color: #dc2a2a;
+// }
+// ._border-bottom-danger {
+// 	border-bottom-color: #dc2a2a;
+// }
+// ._border-left-danger {
+// 	border-left-color: #dc2a2a;
+// }
+// ._border-right-danger {
+// 	border-right-color: #dc2a2a;
+// }
+// ._text-warning {
+// 	color: #ff9f1c;
+// }
+// ._text-warning[href]:focus,
+// ._text-warning[href]:hover {
+// 	color: #ff9f1c;
+// }
+// ._bg-warning {
+// 	background-color: #ff9f1c;
+// }
+// ._border-warning {
+// 	border-color: #ff9f1c;
+// }
+// ._border-top-warning {
+// 	border-top-color: #ff9f1c;
+// }
+// ._border-bottom-warning {
+// 	border-bottom-color: #ff9f1c;
+// }
+// ._border-left-warning {
+// 	border-left-color: #ff9f1c;
+// }
+// ._border-right-warning {
+// 	border-right-color: #ff9f1c;
+// }
+// ._bg-alert-danger {
+// 	background-color: #f2dede;
+// }
+// ._border-alert-danger {
+// 	border-color: #ebccd1;
+// }
+// ._bg-alert-warning {
+// 	background-color: #fcf8e3;
+// }
+// ._border-alert-warning {
+// 	border-color: #faebcc;
+// }
+// ._bg-alert-sucess {
+// 	background-color: #dff0d8;
+// }
+// ._border-alert-sucess {
+// 	border-color: #d6e9c6;
+// }
+// ._bg-alert-info {
+// 	background-color: #bce8f1;
+// }
+// ._border-alert-info {
+// 	border-color: #afdaff;
+// }
+// ._bg-orange-400 {
+// 	background-color: #ef8b0c;
+// }
+// ._bg-orange-500 {
+// 	background-color: #dc800b;
+// }
+// ._text-black {
+// 	color: #000;
+// }
+// ._text-white {
+// 	color: #fff;
+// }
+// ._bg-white {
+// 	background-color: #fff;
+// }
+// ._text-grey-200 {
+// 	color: #f3f5f8;
+// }
+// ._text-grey-200[href]:focus,
+// ._text-grey-200[href]:hover {
+// 	color: #f3f5f8;
+// }
+// ._bg-grey-200 {
+// 	background-color: #f3f5f8;
+// }
+// ._border-grey-200 {
+// 	border-color: #f3f5f8;
+// }
+// ._border-top-grey-200 {
+// 	border-top-color: #f3f5f8;
+// }
+// ._border-bottom-grey-200 {
+// 	border-bottom-color: #f3f5f8;
+// }
+// ._border-left-grey-200 {
+// 	border-left-color: #f3f5f8;
+// }
+// ._border-right-grey-200 {
+// 	border-right-color: #f3f5f8;
+// }
+// ._text-grey-300 {
+// 	color: #b5b7c3;
+// }
+// ._text-grey-300[href]:focus,
+// ._text-grey-300[href]:hover {
+// 	color: #b5b7c3;
+// }
+// ._bg-grey-300 {
+// 	background-color: #b5b7c3;
+// }
+// ._border-grey-300 {
+// 	border-color: #b5b7c3;
+// }
+// ._border-top-grey-300 {
+// 	border-top-color: #b5b7c3;
+// }
+// ._border-bottom-grey-300 {
+// 	border-bottom-color: #b5b7c3;
+// }
+// ._border-left-grey-300 {
+// 	border-left-color: #b5b7c3;
+// }
+// ._border-right-grey-300 {
+// 	border-right-color: #b5b7c3;
+// }
+// ._text-grey-400 {
+// 	color: #acacb6;
+// }
+// ._text-grey-400[href]:focus,
+// ._text-grey-400[href]:hover {
+// 	color: #acacb6;
+// }
+// ._bg-grey-400 {
+// 	background-color: #acacb6;
+// }
+// ._border-grey-400 {
+// 	border-color: #acacb6;
+// }
+// ._border-top-grey-400 {
+// 	border-top-color: #acacb6;
+// }
+// ._border-bottom-grey-400 {
+// 	border-bottom-color: #acacb6;
+// }
+// ._border-left-grey-400 {
+// 	border-left-color: #acacb6;
+// }
+// ._border-right-grey-400 {
+// 	border-right-color: #acacb6;
+// }
+// ._text-grey-600 {
+// 	color: #636371;
+// }
+// ._text-grey-600[href]:focus,
+// ._text-grey-600[href]:hover {
+// 	color: #636371;
+// }
+// ._bg-grey-600 {
+// 	background-color: #636371;
+// }
+// ._border-grey-600 {
+// 	border-color: #636371;
+// }
+// ._border-top-grey-600 {
+// 	border-top-color: #636371;
+// }
+// ._border-bottom-grey-600 {
+// 	border-bottom-color: #636371;
+// }
+// ._border-left-grey-600 {
+// 	border-left-color: #636371;
+// }
+// ._border-right-grey-600 {
+// 	border-right-color: #636371;
+// }
+// ._text-grey-700 {
+// 	color: #474959;
+// }
+// ._text-grey-700[href]:focus,
+// ._text-grey-700[href]:hover {
+// 	color: #474959;
+// }
+// ._bg-grey-700 {
+// 	background-color: #474959;
+// }
+// ._border-grey-700 {
+// 	border-color: #474959;
+// }
+// ._border-top-grey-700 {
+// 	border-top-color: #474959;
+// }
+// ._border-bottom-grey-700 {
+// 	border-bottom-color: #474959;
+// }
+// ._border-left-grey-700 {
+// 	border-left-color: #474959;
+// }
+// ._border-right-grey-700 {
+// 	border-right-color: #474959;
+// }
+// ._text-grey-800 {
+// 	color: #040000;
+// }
+// ._text-grey-800[href]:focus,
+// ._text-grey-800[href]:hover {
+// 	color: #040000;
+// }
+// ._bg-grey-800 {
+// 	background-color: #040000;
+// }
+// ._border-grey-800 {
+// 	border-color: #040000;
+// }
+// ._border-top-grey-800 {
+// 	border-top-color: #040000;
+// }
+// ._border-bottom-grey-800 {
+// 	border-bottom-color: #040000;
+// }
+// ._border-left-grey-800 {
+// 	border-left-color: #040000;
+// }
+// ._border-right-grey-800 {
+// 	border-right-color: #040000;
+// }
+// ._text-blue-100 {
+// 	color: #d9edf7;
+// }
+// ._text-blue-100[href]:focus,
+// ._text-blue-100[href]:hover {
+// 	color: #d9edf7;
+// }
+// ._bg-blue-100 {
+// 	background-color: #d9edf7;
+// }
+// ._border-blue-100 {
+// 	border-color: #d9edf7;
+// }
+// ._border-top-blue-100 {
+// 	border-top-color: #d9edf7;
+// }
+// ._border-bottom-blue-100 {
+// 	border-bottom-color: #d9edf7;
+// }
+// ._border-left-blue-100 {
+// 	border-left-color: #d9edf7;
+// }
+// ._border-right-blue-100 {
+// 	border-right-color: #d9edf7;
+// }
+// ._text-blue-200 {
+// 	color: #bce8f1;
+// }
+// ._text-blue-200[href]:focus,
+// ._text-blue-200[href]:hover {
+// 	color: #bce8f1;
+// }
+// ._bg-blue-200 {
+// 	background-color: #bce8f1 !important;
+// }
+// ._border-blue-200 {
+// 	border-color: #bce8f1;
+// }
+// ._border-top-blue-200 {
+// 	border-top-color: #bce8f1;
+// }
+// ._border-bottom-blue-200 {
+// 	border-bottom-color: #bce8f1;
+// }
+// ._border-left-blue-200 {
+// 	border-left-color: #bce8f1;
+// }
+// ._border-right-blue-200 {
+// 	border-right-color: #bce8f1;
+// }
+// ._text-blue-300 {
+// 	color: #afdaff;
+// }
+// ._text-blue-300[href]:focus,
+// ._text-blue-300[href]:hover {
+// 	color: #afdaff;
+// }
+// ._bg-blue-300 {
+// 	background-color: #afdaff !important;
+// }
+// ._border-blue-300 {
+// 	border-color: #afdaff;
+// }
+// ._border-top-blue-300 {
+// 	border-top-color: #afdaff;
+// }
+// ._border-bottom-blue-300 {
+// 	border-bottom-color: #afdaff;
+// }
+// ._border-left-blue-300 {
+// 	border-left-color: #afdaff;
+// }
+// ._border-right-blue-300 {
+// 	border-right-color: #afdaff;
+// }
+// ._bg-blue-400 {
+// 	background-color: #8fcbff !important;
+// }
+// ._text-blue-500 {
+// 	color: #0f8fff;
+// }
+// ._text-blue-500[href]:focus,
+// ._text-blue-500[href]:hover {
+// 	color: #0f8fff;
+// }
+// ._bg-blue-500 {
+// 	background-color: #0f8fff;
+// }
+// ._border-blue-500 {
+// 	border-color: #0f8fff;
+// }
+// ._border-top-blue-500 {
+// 	border-top-color: #0f8fff;
+// }
+// ._border-bottom-blue-500 {
+// 	border-bottom-color: #0f8fff;
+// }
+// ._border-left-blue-500 {
+// 	border-left-color: #0f8fff;
+// }
+// ._border-right-blue-500 {
+// 	border-right-color: #0f8fff;
+// }
+// ._text-blue-600 {
+// 	color: #127de8;
+// }
+// ._text-blue-600[href]:focus,
+// ._text-blue-600[href]:hover {
+// 	color: #127de8;
+// }
+// ._bg-blue-600 {
+// 	background-color: #127de8 !important;
+// }
+// ._border-blue-600 {
+// 	border-color: #127de8;
+// }
+// ._border-top-blue-600 {
+// 	border-top-color: #127de8;
+// }
+// ._border-bottom-blue-600 {
+// 	border-bottom-color: #127de8;
+// }
+// ._border-left-blue-600 {
+// 	border-left-color: #127de8;
+// }
+// ._border-right-blue-600 {
+// 	border-right-color: #127de8;
+// }
+// ._text-blue-800 {
+// 	color: #1f2374;
+// }
+// ._text-blue-800[href]:focus,
+// ._text-blue-800[href]:hover {
+// 	color: #1f2374;
+// }
+// ._bg-blue-800 {
+// 	background-color: #1f2374;
+// }
+// ._border-blue-800 {
+// 	border-color: #1f2374;
+// }
+// ._border-top-blue-800 {
+// 	border-top-color: #1f2374;
+// }
+// ._border-bottom-blue-800 {
+// 	border-bottom-color: #1f2374;
+// }
+// ._border-left-blue-800 {
+// 	border-left-color: #1f2374;
+// }
+// ._border-right-blue-800 {
+// 	border-right-color: #1f2374;
+// }
+// ._text-zengo {
+// 	color: #35c4ba !important;
+// }
+// ._bg-loyalty-program-primary {
+// 	background-color: #cfe9ff !important;
+// }
+// #widgetComponentContainerOnSellPage,
+// #widgetComponentContainerOnBuyPage {
+// 	box-shadow: none !important;
+// 	height: auto !important;
+// 	top: 0 !important;
+// 	margin: 0 auto !important;
+// 	float: none !important;
+// 	max-width: 310px !important;
+// }
+// #widgetComponentContainerOnBuyPage .ulClassList {
+// 	right: 0 !important;
+// 	z-index: 100;
+// }
+// #widgetComponentContainerOnMyAccount {
+// 	height: 335px;
+// 	margin: 0 auto !important;
+// 	max-width: 330px !important;
+// 	top: 0 !important;
+// 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+// }
+// #widgetComponentContainerOnMyAccount .ulClassList {
+// 	right: 10px !important;
+// 	z-index: 100;
+// }
+// @media (min-width: 1366px) {
+// 	#widgetComponentContainerOnMyAccount {
+// 		float: none !important;
+// 	}
+// }
+// #widgetComponentContainerOnMyAccount .tabs {
+// 	top: 0px !important;
+// }
+// #widgetComponentContainerOnMyAccount .tabs .tab-list-item {
+// 	width: 165px !important;
+// 	background-image: unset !important;
+// 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+// }
+// #widgetComponentContainerOnMyAccount .tabs .tab-content-raw {
+// 	padding: 0 10px !important;
+// }
+// #widgetComponentContainerOnMyAccount .tabs .tab-content-raw:last-child {
+// 	left: -16px !important;
+// }
+// #widgetComponentContainerOnMyAccount #widgetBuyBtn,
+// #widgetComponentContainerOnMyAccount #widgetSellBtn {
+// 	margin-top: 9px !important;
+// }
+// #widgetComponentContainerOnMyAccount .widgetRates {
+// 	margin: 13px 0 8px !important;
+// }
+// .widgetComponentAbVariationB,
+// .widgetComponentAbVariationC {
+// 	height: 390px !important;
+// }
+// .widgetComponentAbVariationAccB,
+// .widgetComponentAbVariationAccC {
+// 	height: 360px !important;
+// }
+// #widgetComponentContainerOnHomePage,
+// #widgetComponentContainerOnSellPage,
+// #widgetComponentContainerOnBuyPage {
+// 	height: 364px;
+// }
+// #widgetComponentContainerOnHomePage,
+// #widgetComponentContainerOnSellPage,
+// #widgetComponentContainerOnBuyPage,
+// #widgetComponentContainerOnMyAccount {
+// 	position: relative;
+// 	background-color: #fff;
+// 	border-radius: 4px;
+// 	box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// @media only screen and (min-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage,
+// 	#widgetComponentContainerOnSellPage,
+// 	#widgetComponentContainerOnBuyPage,
+// 	#widgetComponentContainerOnMyAccount {
+// 		width: 400px;
+// 		margin: 0 auto;
+// 		// float: left;
+// 		// top: 35px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage,
+// 	#widgetComponentContainerOnSellPage,
+// 	#widgetComponentContainerOnBuyPage,
+// 	#widgetComponentContainerOnMyAccount {
+// 		top: 30px;
+// 		width: 330px;
+// 		margin: 0 auto;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage form,
+// #widgetComponentContainerOnSellPage form,
+// #widgetComponentContainerOnBuyPage form,
+// #widgetComponentContainerOnMyAccount form {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+// #widgetComponentContainerOnHomePage form #widgetBuyBtn,
+// #widgetComponentContainerOnHomePage form #widgetSellBtn,
+// #widgetComponentContainerOnSellPage form #widgetBuyBtn,
+// #widgetComponentContainerOnSellPage form #widgetSellBtn,
+// #widgetComponentContainerOnBuyPage form #widgetBuyBtn,
+// #widgetComponentContainerOnBuyPage form #widgetSellBtn,
+// #widgetComponentContainerOnMyAccount form #widgetBuyBtn,
+// #widgetComponentContainerOnMyAccount form #widgetSellBtn {
+// 	margin-top: 20px;
+// }
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverWarning {
+// 	display: block;
+// 	position: relative;
+// 	margin: 0 auto;
+// 	left: 0;
+// 	width: 0;
+// 	height: 2px;
+// 	border-bottom-right-radius: 4px;
+// 	border-bottom-left-radius: 4px;
+// }
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHover {
+// 	transition: 0.2s ease all;
+// }
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverError {
+// 	background-color: #dc2a2a;
+// 	width: 100%;
+// }
+// #widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverWarning {
+// 	background-color: #ff9f1c;
+// 	width: 100%;
+// }
+// #widgetComponentContainerOnHomePage form .buyRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnHomePage form .sellRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .buyRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .sellRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .buyRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .sellRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .buyRow:focus-within .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .sellRow:focus-within .inputBottomHover {
+// 	background-color: #0f8fff !important;
+// 	width: 100%;
+// }
+// @media only screen and (min-width: 769px) {
+// 	#widgetComponentContainerOnHomePage form .buyRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnHomePage form .sellRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnSellPage form .buyRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnSellPage form .sellRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnBuyPage form .buyRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnBuyPage form .sellRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnMyAccount form .buyRow:hover .inputBottomHover,
+// 	#widgetComponentContainerOnMyAccount form .sellRow:hover .inputBottomHover {
+// 		background-color: #636371;
+// 		width: 100%;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage form .buyRow .dropdownInputErrors,
+// #widgetComponentContainerOnHomePage form .sellRow .dropdownInputErrors,
+// #widgetComponentContainerOnSellPage form .buyRow .dropdownInputErrors,
+// #widgetComponentContainerOnSellPage form .sellRow .dropdownInputErrors,
+// #widgetComponentContainerOnBuyPage form .buyRow .dropdownInputErrors,
+// #widgetComponentContainerOnBuyPage form .sellRow .dropdownInputErrors,
+// #widgetComponentContainerOnMyAccount form .buyRow .dropdownInputErrors,
+// #widgetComponentContainerOnMyAccount form .sellRow .dropdownInputErrors {
+// 	margin-top: -3px !important;
+// }
+// #widgetComponentContainerOnHomePage form .tabs,
+// #widgetComponentContainerOnSellPage form .tabs,
+// #widgetComponentContainerOnBuyPage form .tabs,
+// #widgetComponentContainerOnMyAccount form .tabs {
+// 	position: relative;
+// 	top: -16px;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+// 	display: grid;
+// }
+// @media only screen and (min-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+// 		padding: 0 44px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+// 	#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+// 		padding: 0 10px;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:last-child,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:last-child,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:last-child,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:last-child {
+// 	position: relative;
+// 	left: -8px;
+// 	top: 10px;
+// 	width: 110%;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning {
+// 	display: inline-block;
+// 	position: relative;
+// 	margin: 0 auto;
+// 	left: -1px;
+// 	width: 0;
+// 	height: 2px;
+// 	border-bottom-right-radius: 4px;
+// 	border-bottom-left-radius: 4px;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHover {
+// 	transition: 0.2s ease all;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverError {
+// 	background-color: #dc2a2a;
+// 	width: 99%;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning {
+// 	background-color: #ff9f1c;
+// 	width: 99%;
+// }
+// #widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+// #widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+// #widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+// #widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover {
+// 	background-color: #0f8fff !important;
+// 	width: 99%;
+// }
+// @media only screen and (min-width: 769px) {
+// 	#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+// 	#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+// 	#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+// 	#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:hover .inputBottomHover {
+// 		background-color: #636371;
+// 		width: 99%;
+// 	}
+// }
+// @media only screen and (min-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnSellPage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnBuyPage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnMyAccount form .tabs .tab-list-item {
+// 		width: 200px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnSellPage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnBuyPage form .tabs .tab-list-item,
+// 	#widgetComponentContainerOnMyAccount form .tabs .tab-list-item {
+// 		width: 165px;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInput,
+// #widgetComponentContainerOnSellPage form .dropdownInput,
+// #widgetComponentContainerOnBuyPage form .dropdownInput,
+// #widgetComponentContainerOnMyAccount form .dropdownInput {
+// 	flex-direction: row;
+// 	margin: 0 auto;
+// 	margin-top: 15px;
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInputSubmit,
+// #widgetComponentContainerOnSellPage form .dropdownInputSubmit,
+// #widgetComponentContainerOnBuyPage form .dropdownInputSubmit,
+// #widgetComponentContainerOnMyAccount form .dropdownInputSubmit {
+// 	margin: 0 auto;
+// 	margin-top: 20px;
+// 	height: 60px;
+// 	width: 320px;
+// 	border-radius: 4px;
+// 	background-color: #ef8b0c;
+// 	outline: none;
+// 	box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.3);
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	color: #ffffff;
+// 	font-family: "Open Sans", Arial, sans-serif;
+// 	font-size: 20px;
+// 	font-weight: bold;
+// 	line-height: 27px;
+// 	text-align: center;
+// 	border-color: transparent;
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInputSubmit:hover,
+// #widgetComponentContainerOnSellPage form .dropdownInputSubmit:hover,
+// #widgetComponentContainerOnBuyPage form .dropdownInputSubmit:hover,
+// #widgetComponentContainerOnMyAccount form .dropdownInputSubmit:hover {
+// 	background-color: #cc7508;
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInputSubmit:active,
+// #widgetComponentContainerOnSellPage form .dropdownInputSubmit:active,
+// #widgetComponentContainerOnBuyPage form .dropdownInputSubmit:active,
+// #widgetComponentContainerOnMyAccount form .dropdownInputSubmit:active {
+// 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy,
+// #widgetComponentContainerOnHomePage form .moreIconsSell,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy,
+// #widgetComponentContainerOnSellPage form .moreIconsSell,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell {
+// 	position: relative;
+// 	top: 22px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul {
+// 	list-style-type: none;
+// 	display: contents;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li {
+// 	float: left;
+// 	height: 30px;
+// 	min-width: 30px;
+// 	margin: 0 2px;
+// 	background-repeat: no-repeat;
+// 	background-position: center center;
+// 	background-origin: content-box;
+// 	background-size: cover;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.visaIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.visaIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.visaIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.visaIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.visaIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.visaIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.visaIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.visaIcon {
+// 	background-image: url("//assets.coinmama.com/icons/visa_blue.svg");
+// 	background-size: 40px;
+// 	width: 46px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.masterCardIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.masterCardIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.masterCardIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.masterCardIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.masterCardIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.masterCardIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.masterCardIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.masterCardIcon {
+// 	background-image: url("//assets.coinmama.com/icons/mc_black.svg");
+// 	width: 30px;
+// 	background-size: 30px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.sepaIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.sepaIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.sepaIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.sepaIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.sepaIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.sepaIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.sepaIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.sepaIcon {
+// 	background-image: url("//assets.coinmama.com/icons/SEPA.svg");
+// 	background-size: 48px;
+// 	width: 54px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.applePayIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.applePayIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.applePayIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.applePayIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.applePayIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.applePayIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.applePayIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.applePayIcon {
+// 	background-image: url("//assets.coinmama.com/icons/Apple_Pay.svg");
+// 	width: 47px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.googlePayIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.googlePayIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.googlePayIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.googlePayIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.googlePayIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.googlePayIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.googlePayIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.googlePayIcon {
+// 	background-image: url("//assets.coinmama.com/icons/google_pay.svg");
+// 	width: 50px;
+// 	background-size: 50px;
+// 	margin-left: 5px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.swiftIcon,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.swiftIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.swiftIcon,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.swiftIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.swiftIcon,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.swiftIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.swiftIcon,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.swiftIcon {
+// 	background-image: url("//assets.coinmama.com/icons/Swift.svg");
+// 	width: 45px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.ibt {
+// 	font-size: 14px;
+// 	color: #1f2374;
+// 	font-family: "Cabin", Arial, sans-serif;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.andMore,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.andMore,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.andMore {
+// 	padding-left: 8px;
+// 	padding-top: 2px;
+// }
+// #widgetComponentContainerOnHomePage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnHomePage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnSellPage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnSellPage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnBuyPage form .moreIconsSell ul li.ibt,
+// #widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.ibt,
+// #widgetComponentContainerOnMyAccount form .moreIconsSell ul li.ibt {
+// 	font-size: 16px !important;
+// 	padding-left: 10px;
+// 	padding-top: 4px;
+// 	width: 195px;
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInputSubmitWidget,
+// #widgetComponentContainerOnSellPage form .dropdownInputSubmitWidget,
+// #widgetComponentContainerOnBuyPage form .dropdownInputSubmitWidget,
+// #widgetComponentContainerOnMyAccount form .dropdownInputSubmitWidget {
+// 	display: block;
+// 	position: relative;
+// 	top: 20px;
+// 	width: 310px;
+// 	height: 50px;
+// 	border: none;
+// 	border-radius: 4px;
+// 	background-color: #0f8fff;
+// 	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+// 	color: #fff;
+// 	cursor: pointer;
+// 	font-size: 18px;
+// 	font-weight: bold;
+// }
+// #widgetComponentContainerOnHomePage form .dropdownInputSubmitWidget:hover,
+// #widgetComponentContainerOnSellPage form .dropdownInputSubmitWidget:hover,
+// #widgetComponentContainerOnBuyPage form .dropdownInputSubmitWidget:hover,
+// #widgetComponentContainerOnMyAccount form .dropdownInputSubmitWidget:hover {
+// 	background-color: #127de8;
+// }
+// #widgetComponentContainerOnHomePage form .select-all-balance,
+// #widgetComponentContainerOnSellPage form .select-all-balance,
+// #widgetComponentContainerOnBuyPage form .select-all-balance,
+// #widgetComponentContainerOnMyAccount form .select-all-balance {
+// 	font-size: 14px;
+// 	line-height: 19px;
+// 	width: 308px;
+// 	font-weight: bold;
+// 	text-align: right;
+// 	color: #0f8fff;
+// 	font-family: "Open Sans";
+// 	letter-spacing: 0;
+// 	margin: 5px auto 0 auto;
+// }
+// @media (min-width: 769px) {
+// 	#widgetComponentContainerOnHomePage form .select-all-balance,
+// 	#widgetComponentContainerOnSellPage form .select-all-balance,
+// 	#widgetComponentContainerOnBuyPage form .select-all-balance,
+// 	#widgetComponentContainerOnMyAccount form .select-all-balance {
+// 		line-height: 22px;
+// 		font-size: 16px;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage form .select-all-balance span,
+// #widgetComponentContainerOnSellPage form .select-all-balance span,
+// #widgetComponentContainerOnBuyPage form .select-all-balance span,
+// #widgetComponentContainerOnMyAccount form .select-all-balance span {
+// 	display: inline-block;
+// 	cursor: pointer;
+// }
+// #widgetComponentContainerOnHomePage form .sell-not-available-msg,
+// #widgetComponentContainerOnSellPage form .sell-not-available-msg,
+// #widgetComponentContainerOnBuyPage form .sell-not-available-msg,
+// #widgetComponentContainerOnMyAccount form .sell-not-available-msg {
+// 	margin: 30px;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates,
+// #widgetComponentContainerOnSellPage .widgetRates,
+// #widgetComponentContainerOnBuyPage .widgetRates,
+// #widgetComponentContainerOnMyAccount .widgetRates {
+// 	position: relative;
+// 	top: 2px;
+// 	margin: 12px 0;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span,
+// #widgetComponentContainerOnSellPage .widgetRates span,
+// #widgetComponentContainerOnBuyPage .widgetRates span,
+// #widgetComponentContainerOnMyAccount .widgetRates span {
+// 	color: #474959;
+// 	font-size: 10px;
+// 	font-family: "Open Sans";
+// 	letter-spacing: 0;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span:first-child,
+// #widgetComponentContainerOnSellPage .widgetRates span:first-child,
+// #widgetComponentContainerOnBuyPage .widgetRates span:first-child,
+// #widgetComponentContainerOnMyAccount .widgetRates span:first-child {
+// 	float: left;
+// 	font-weight: bold;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span:last-child,
+// #widgetComponentContainerOnSellPage .widgetRates span:last-child,
+// #widgetComponentContainerOnBuyPage .widgetRates span:last-child,
+// #widgetComponentContainerOnMyAccount .widgetRates span:last-child {
+// 	float: right;
+// }
+// #widgetComponentContainerOnHomePage .abTestDisclaimer,
+// #widgetComponentContainerOnSellPage .abTestDisclaimer,
+// #widgetComponentContainerOnBuyPage .abTestDisclaimer,
+// #widgetComponentContainerOnMyAccount .abTestDisclaimer {
+// 	position: relative;
+// 	font-size: 10px;
+// 	text-align: left;
+// 	color: #fff;
+// 	line-height: 1.3;
+// 	margin: 0 10px;
+// }
+// #widgetComponentContainerOnMyAccount .abTestDisclaimer {
+// 	color: #474959;
+// 	top: 22px;
+// }
+// #widgetComponentContainerOnHomePage .abTestDisclaimer {
+// 	margin: 0 5px;
+// }
+// @media only screen and (min-width: 1201px) {
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerA {
+// 		top: 52px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerA {
+// 		top: 63px;
+// 	}
+// }
+// @media only screen and (min-width: 1201px) {
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerB,
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerC {
+// 		top: 44px;
+// 	}
+// }
+// @media only screen and (max-width: 1200px) {
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerB,
+// 	#widgetComponentContainerOnHomePage .abTestDisclaimerC {
+// 		top: 55px;
+// 	}
+// }
+// #widgetComponentContainerOnHomePage .widgetRates {
+// 	position: relative;
+// 	top: 2px;
+// 	margin: 12px 0;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span {
+// 	color: #474959;
+// 	font-size: 10px;
+// 	font-family: "Open Sans";
+// 	letter-spacing: 0;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span:first-child {
+// 	float: left;
+// 	font-weight: bold;
+// }
+// #widgetComponentContainerOnHomePage .widgetRates span:last-child {
+// 	float: right;
+// }
+// #widgetComponentContainerOnHomePage .abTestDisclaimer {
+// 	position: relative;
+// 	font-size: 10px;
+// 	text-align: left;
+// 	color: #fff;
+// 	line-height: 1.3;
+// 	margin: 0 10px;
+// }
+// #widgetComponentContainerOnMyAccount .abTestDisclaimer {
+// 	color: #474959;
+// 	top: 22px;
+// }
+// .widget-buy-comments,
+// .widget-sell-comments {
+// 	max-width: 310px;
+// 	color: #474959 !important;
+// 	font-size: 10px !important;
+// 	text-align: left;
+// 	margin: 0 auto;
+// 	line-height: 1.5 !important;
+// 	padding-top: 10px;
+// }
+
+// ._shadow-depth-1 {
+// 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+// 		0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+// }
+// ._shadow-depth-6 {
+// 	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+// 		0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+// }
+// ._shadow-depth-12 {
+// 	box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+// 		0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+// }
+// ._text-danger {
+// 	color: #dc2a2a;
+// }
+// ._text-danger[href]:focus,
+// ._text-danger[href]:hover {
+// 	color: #dc2a2a;
+// }
+// ._bg-danger {
+// 	background-color: #dc2a2a;
+// }
+// ._border-danger {
+// 	border-color: #dc2a2a;
+// }
+// ._border-top-danger {
+// 	border-top-color: #dc2a2a;
+// }
+// ._border-bottom-danger {
+// 	border-bottom-color: #dc2a2a;
+// }
+// ._border-left-danger {
+// 	border-left-color: #dc2a2a;
+// }
+// ._border-right-danger {
+// 	border-right-color: #dc2a2a;
+// }
+// ._text-warning {
+// 	color: #ff9f1c;
+// }
+// ._text-warning[href]:focus,
+// ._text-warning[href]:hover {
+// 	color: #ff9f1c;
+// }
+// ._bg-warning {
+// 	background-color: #ff9f1c;
+// }
+// ._border-warning {
+// 	border-color: #ff9f1c;
+// }
+// ._border-top-warning {
+// 	border-top-color: #ff9f1c;
+// }
+// ._border-bottom-warning {
+// 	border-bottom-color: #ff9f1c;
+// }
+// ._border-left-warning {
+// 	border-left-color: #ff9f1c;
+// }
+// ._border-right-warning {
+// 	border-right-color: #ff9f1c;
+// }
+// ._bg-alert-danger {
+// 	background-color: #f2dede;
+// }
+// ._border-alert-danger {
+// 	border-color: #ebccd1;
+// }
+// ._bg-alert-warning {
+// 	background-color: #fcf8e3;
+// }
+// ._border-alert-warning {
+// 	border-color: #faebcc;
+// }
+// ._bg-alert-sucess {
+// 	background-color: #dff0d8;
+// }
+// ._border-alert-sucess {
+// 	border-color: #d6e9c6;
+// }
+// ._bg-alert-info {
+// 	background-color: #bce8f1;
+// }
+// ._border-alert-info {
+// 	border-color: #afdaff;
+// }
+// ._bg-orange-400 {
+// 	background-color: #ef8b0c;
+// }
+// ._bg-orange-500 {
+// 	background-color: #dc800b;
+// }
+// ._text-black {
+// 	color: #000;
+// }
+// ._text-white {
+// 	color: #fff;
+// }
+// ._bg-white {
+// 	background-color: #fff;
+// }
+// ._text-grey-200 {
+// 	color: #f3f5f8;
+// }
+// ._text-grey-200[href]:focus,
+// ._text-grey-200[href]:hover {
+// 	color: #f3f5f8;
+// }
+// ._bg-grey-200 {
+// 	background-color: #f3f5f8;
+// }
+// ._border-grey-200 {
+// 	border-color: #f3f5f8;
+// }
+// ._border-top-grey-200 {
+// 	border-top-color: #f3f5f8;
+// }
+// ._border-bottom-grey-200 {
+// 	border-bottom-color: #f3f5f8;
+// }
+// ._border-left-grey-200 {
+// 	border-left-color: #f3f5f8;
+// }
+// ._border-right-grey-200 {
+// 	border-right-color: #f3f5f8;
+// }
+// ._text-grey-300 {
+// 	color: #b5b7c3;
+// }
+// ._text-grey-300[href]:focus,
+// ._text-grey-300[href]:hover {
+// 	color: #b5b7c3;
+// }
+// ._bg-grey-300 {
+// 	background-color: #b5b7c3;
+// }
+// ._border-grey-300 {
+// 	border-color: #b5b7c3;
+// }
+// ._border-top-grey-300 {
+// 	border-top-color: #b5b7c3;
+// }
+// ._border-bottom-grey-300 {
+// 	border-bottom-color: #b5b7c3;
+// }
+// ._border-left-grey-300 {
+// 	border-left-color: #b5b7c3;
+// }
+// ._border-right-grey-300 {
+// 	border-right-color: #b5b7c3;
+// }
+// ._text-grey-400 {
+// 	color: #acacb6;
+// }
+// ._text-grey-400[href]:focus,
+// ._text-grey-400[href]:hover {
+// 	color: #acacb6;
+// }
+// ._bg-grey-400 {
+// 	background-color: #acacb6;
+// }
+// ._border-grey-400 {
+// 	border-color: #acacb6;
+// }
+// ._border-top-grey-400 {
+// 	border-top-color: #acacb6;
+// }
+// ._border-bottom-grey-400 {
+// 	border-bottom-color: #acacb6;
+// }
+// ._border-left-grey-400 {
+// 	border-left-color: #acacb6;
+// }
+// ._border-right-grey-400 {
+// 	border-right-color: #acacb6;
+// }
+// ._text-grey-600 {
+// 	color: #636371;
+// }
+// ._text-grey-600[href]:focus,
+// ._text-grey-600[href]:hover {
+// 	color: #636371;
+// }
+// ._bg-grey-600 {
+// 	background-color: #636371;
+// }
+// ._border-grey-600 {
+// 	border-color: #636371;
+// }
+// ._border-top-grey-600 {
+// 	border-top-color: #636371;
+// }
+// ._border-bottom-grey-600 {
+// 	border-bottom-color: #636371;
+// }
+// ._border-left-grey-600 {
+// 	border-left-color: #636371;
+// }
+// ._border-right-grey-600 {
+// 	border-right-color: #636371;
+// }
+// ._text-grey-700 {
+// 	color: #474959;
+// }
+// ._text-grey-700[href]:focus,
+// ._text-grey-700[href]:hover {
+// 	color: #474959;
+// }
+// ._bg-grey-700 {
+// 	background-color: #474959;
+// }
+// ._border-grey-700 {
+// 	border-color: #474959;
+// }
+// ._border-top-grey-700 {
+// 	border-top-color: #474959;
+// }
+// ._border-bottom-grey-700 {
+// 	border-bottom-color: #474959;
+// }
+// ._border-left-grey-700 {
+// 	border-left-color: #474959;
+// }
+// ._border-right-grey-700 {
+// 	border-right-color: #474959;
+// }
+// ._text-grey-800 {
+// 	color: #040000;
+// }
+// ._text-grey-800[href]:focus,
+// ._text-grey-800[href]:hover {
+// 	color: #040000;
+// }
+// ._bg-grey-800 {
+// 	background-color: #040000;
+// }
+// ._border-grey-800 {
+// 	border-color: #040000;
+// }
+// ._border-top-grey-800 {
+// 	border-top-color: #040000;
+// }
+// ._border-bottom-grey-800 {
+// 	border-bottom-color: #040000;
+// }
+// ._border-left-grey-800 {
+// 	border-left-color: #040000;
+// }
+// ._border-right-grey-800 {
+// 	border-right-color: #040000;
+// }
+// ._text-blue-100 {
+// 	color: #d9edf7;
+// }
+// ._text-blue-100[href]:focus,
+// ._text-blue-100[href]:hover {
+// 	color: #d9edf7;
+// }
+// ._bg-blue-100 {
+// 	background-color: #d9edf7;
+// }
+// ._border-blue-100 {
+// 	border-color: #d9edf7;
+// }
+// ._border-top-blue-100 {
+// 	border-top-color: #d9edf7;
+// }
+// ._border-bottom-blue-100 {
+// 	border-bottom-color: #d9edf7;
+// }
+// ._border-left-blue-100 {
+// 	border-left-color: #d9edf7;
+// }
+// ._border-right-blue-100 {
+// 	border-right-color: #d9edf7;
+// }
+// ._text-blue-200 {
+// 	color: #bce8f1;
+// }
+// ._text-blue-200[href]:focus,
+// ._text-blue-200[href]:hover {
+// 	color: #bce8f1;
+// }
+// ._bg-blue-200 {
+// 	background-color: #bce8f1 !important;
+// }
+// ._border-blue-200 {
+// 	border-color: #bce8f1;
+// }
+// ._border-top-blue-200 {
+// 	border-top-color: #bce8f1;
+// }
+// ._border-bottom-blue-200 {
+// 	border-bottom-color: #bce8f1;
+// }
+// ._border-left-blue-200 {
+// 	border-left-color: #bce8f1;
+// }
+// ._border-right-blue-200 {
+// 	border-right-color: #bce8f1;
+// }
+// ._text-blue-300 {
+// 	color: #afdaff;
+// }
+// ._text-blue-300[href]:focus,
+// ._text-blue-300[href]:hover {
+// 	color: #afdaff;
+// }
+// ._bg-blue-300 {
+// 	background-color: #afdaff !important;
+// }
+// ._border-blue-300 {
+// 	border-color: #afdaff;
+// }
+// ._border-top-blue-300 {
+// 	border-top-color: #afdaff;
+// }
+// ._border-bottom-blue-300 {
+// 	border-bottom-color: #afdaff;
+// }
+// ._border-left-blue-300 {
+// 	border-left-color: #afdaff;
+// }
+// ._border-right-blue-300 {
+// 	border-right-color: #afdaff;
+// }
+// ._bg-blue-400 {
+// 	background-color: #8fcbff !important;
+// }
+// ._text-blue-500 {
+// 	color: #0f8fff;
+// }
+// ._text-blue-500[href]:focus,
+// ._text-blue-500[href]:hover {
+// 	color: #0f8fff;
+// }
+// ._bg-blue-500 {
+// 	background-color: #0f8fff;
+// }
+// ._border-blue-500 {
+// 	border-color: #0f8fff;
+// }
+// ._border-top-blue-500 {
+// 	border-top-color: #0f8fff;
+// }
+// ._border-bottom-blue-500 {
+// 	border-bottom-color: #0f8fff;
+// }
+// ._border-left-blue-500 {
+// 	border-left-color: #0f8fff;
+// }
+// ._border-right-blue-500 {
+// 	border-right-color: #0f8fff;
+// }
+// ._text-blue-600 {
+// 	color: #127de8;
+// }
+// ._text-blue-600[href]:focus,
+// ._text-blue-600[href]:hover {
+// 	color: #127de8;
+// }
+// ._bg-blue-600 {
+// 	background-color: #127de8 !important;
+// }
+// ._border-blue-600 {
+// 	border-color: #127de8;
+// }
+// ._border-top-blue-600 {
+// 	border-top-color: #127de8;
+// }
+// ._border-bottom-blue-600 {
+// 	border-bottom-color: #127de8;
+// }
+// ._border-left-blue-600 {
+// 	border-left-color: #127de8;
+// }
+// ._border-right-blue-600 {
+// 	border-right-color: #127de8;
+// }
+// ._text-blue-800 {
+// 	color: #1f2374;
+// }
+// ._text-blue-800[href]:focus,
+// ._text-blue-800[href]:hover {
+// 	color: #1f2374;
+// }
+// ._bg-blue-800 {
+// 	background-color: #1f2374;
+// }
+// ._border-blue-800 {
+// 	border-color: #1f2374;
+// }
+// ._border-top-blue-800 {
+// 	border-top-color: #1f2374;
+// }
+// ._border-bottom-blue-800 {
+// 	border-bottom-color: #1f2374;
+// }
+// ._border-left-blue-800 {
+// 	border-left-color: #1f2374;
+// }
+// ._border-right-blue-800 {
+// 	border-right-color: #1f2374;
+// }
+// ._text-zengo {
+// 	color: #35c4ba !important;
+// }
+// ._bg-loyalty-program-primary {
+// 	background-color: #cfe9ff !important;
+// }
+// .dsm-input-label {
+// 	font-family: "Open Sans";
+// 	font-weight: bold;
+// 	color: #474959;
+// 	font-size: 16px;
+// 	margin: 9px 0 2px;
+// 	line-height: 22px;
+// 	text-align: left;
+// }

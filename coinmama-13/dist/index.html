@@ -1,0 +1,4167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>gulp-scss-starter</title>
+	<meta name="theme-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" sizes="16x16" href="favicon-16x16.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="favicon-32x32.png" type="image/png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="1024x1024" href="apple-touch-icon-1024x1024.png">
+	<link rel="stylesheet" href="main.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Open+Sans:wght@400;700;800&display=swap"
+		rel="stylesheet">
+	<script>var token = "{{AJAX_TOKEN}}";</script>
+	<style>
+		._shadow-depth-1 {
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+				0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		._shadow-depth-6 {
+			box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+		}
+
+		._shadow-depth-12 {
+			box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+				0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		._text-danger {
+			color: #dc2a2a;
+		}
+
+		._text-danger[href]:focus,
+		._text-danger[href]:hover {
+			color: #dc2a2a;
+		}
+
+		._bg-danger {
+			background-color: #dc2a2a;
+		}
+
+		._border-danger {
+			border-color: #dc2a2a;
+		}
+
+		._border-top-danger {
+			border-top-color: #dc2a2a;
+		}
+
+		._border-bottom-danger {
+			border-bottom-color: #dc2a2a;
+		}
+
+		._border-left-danger {
+			border-left-color: #dc2a2a;
+		}
+
+		._border-right-danger {
+			border-right-color: #dc2a2a;
+		}
+
+		._text-warning {
+			color: #ff9f1c;
+		}
+
+		._text-warning[href]:focus,
+		._text-warning[href]:hover {
+			color: #ff9f1c;
+		}
+
+		._bg-warning {
+			background-color: #ff9f1c;
+		}
+
+		._border-warning {
+			border-color: #ff9f1c;
+		}
+
+		._border-top-warning {
+			border-top-color: #ff9f1c;
+		}
+
+		._border-bottom-warning {
+			border-bottom-color: #ff9f1c;
+		}
+
+		._border-left-warning {
+			border-left-color: #ff9f1c;
+		}
+
+		._border-right-warning {
+			border-right-color: #ff9f1c;
+		}
+
+		._bg-alert-danger {
+			background-color: #f2dede;
+		}
+
+		._border-alert-danger {
+			border-color: #ebccd1;
+		}
+
+		._bg-alert-warning {
+			background-color: #fcf8e3;
+		}
+
+		._border-alert-warning {
+			border-color: #faebcc;
+		}
+
+		._bg-alert-sucess {
+			background-color: #dff0d8;
+		}
+
+		._border-alert-sucess {
+			border-color: #d6e9c6;
+		}
+
+		._bg-alert-info {
+			background-color: #bce8f1;
+		}
+
+		._border-alert-info {
+			border-color: #afdaff;
+		}
+
+		._bg-orange-400 {
+			background-color: #ef8b0c;
+		}
+
+		._bg-orange-500 {
+			background-color: #dc800b;
+		}
+
+		._text-black {
+			color: #000;
+		}
+
+		._text-white {
+			color: #fff;
+		}
+
+		._bg-white {
+			background-color: #fff;
+		}
+
+		._text-grey-200 {
+			color: #f3f5f8;
+		}
+
+		._text-grey-200[href]:focus,
+		._text-grey-200[href]:hover {
+			color: #f3f5f8;
+		}
+
+		._bg-grey-200 {
+			background-color: #f3f5f8;
+		}
+
+		._border-grey-200 {
+			border-color: #f3f5f8;
+		}
+
+		._border-top-grey-200 {
+			border-top-color: #f3f5f8;
+		}
+
+		._border-bottom-grey-200 {
+			border-bottom-color: #f3f5f8;
+		}
+
+		._border-left-grey-200 {
+			border-left-color: #f3f5f8;
+		}
+
+		._border-right-grey-200 {
+			border-right-color: #f3f5f8;
+		}
+
+		._text-grey-300 {
+			color: #b5b7c3;
+		}
+
+		._text-grey-300[href]:focus,
+		._text-grey-300[href]:hover {
+			color: #b5b7c3;
+		}
+
+		._bg-grey-300 {
+			background-color: #b5b7c3;
+		}
+
+		._border-grey-300 {
+			border-color: #b5b7c3;
+		}
+
+		._border-top-grey-300 {
+			border-top-color: #b5b7c3;
+		}
+
+		._border-bottom-grey-300 {
+			border-bottom-color: #b5b7c3;
+		}
+
+		._border-left-grey-300 {
+			border-left-color: #b5b7c3;
+		}
+
+		._border-right-grey-300 {
+			border-right-color: #b5b7c3;
+		}
+
+		._text-grey-400 {
+			color: #acacb6;
+		}
+
+		._text-grey-400[href]:focus,
+		._text-grey-400[href]:hover {
+			color: #acacb6;
+		}
+
+		._bg-grey-400 {
+			background-color: #acacb6;
+		}
+
+		._border-grey-400 {
+			border-color: #acacb6;
+		}
+
+		._border-top-grey-400 {
+			border-top-color: #acacb6;
+		}
+
+		._border-bottom-grey-400 {
+			border-bottom-color: #acacb6;
+		}
+
+		._border-left-grey-400 {
+			border-left-color: #acacb6;
+		}
+
+		._border-right-grey-400 {
+			border-right-color: #acacb6;
+		}
+
+		._text-grey-600 {
+			color: #636371;
+		}
+
+		._text-grey-600[href]:focus,
+		._text-grey-600[href]:hover {
+			color: #636371;
+		}
+
+		._bg-grey-600 {
+			background-color: #636371;
+		}
+
+		._border-grey-600 {
+			border-color: #636371;
+		}
+
+		._border-top-grey-600 {
+			border-top-color: #636371;
+		}
+
+		._border-bottom-grey-600 {
+			border-bottom-color: #636371;
+		}
+
+		._border-left-grey-600 {
+			border-left-color: #636371;
+		}
+
+		._border-right-grey-600 {
+			border-right-color: #636371;
+		}
+
+		._text-grey-700 {
+			color: #474959;
+		}
+
+		._text-grey-700[href]:focus,
+		._text-grey-700[href]:hover {
+			color: #474959;
+		}
+
+		._bg-grey-700 {
+			background-color: #474959;
+		}
+
+		._border-grey-700 {
+			border-color: #474959;
+		}
+
+		._border-top-grey-700 {
+			border-top-color: #474959;
+		}
+
+		._border-bottom-grey-700 {
+			border-bottom-color: #474959;
+		}
+
+		._border-left-grey-700 {
+			border-left-color: #474959;
+		}
+
+		._border-right-grey-700 {
+			border-right-color: #474959;
+		}
+
+		._text-grey-800 {
+			color: #040000;
+		}
+
+		._text-grey-800[href]:focus,
+		._text-grey-800[href]:hover {
+			color: #040000;
+		}
+
+		._bg-grey-800 {
+			background-color: #040000;
+		}
+
+		._border-grey-800 {
+			border-color: #040000;
+		}
+
+		._border-top-grey-800 {
+			border-top-color: #040000;
+		}
+
+		._border-bottom-grey-800 {
+			border-bottom-color: #040000;
+		}
+
+		._border-left-grey-800 {
+			border-left-color: #040000;
+		}
+
+		._border-right-grey-800 {
+			border-right-color: #040000;
+		}
+
+		._text-blue-100 {
+			color: #d9edf7;
+		}
+
+		._text-blue-100[href]:focus,
+		._text-blue-100[href]:hover {
+			color: #d9edf7;
+		}
+
+		._bg-blue-100 {
+			background-color: #d9edf7;
+		}
+
+		._border-blue-100 {
+			border-color: #d9edf7;
+		}
+
+		._border-top-blue-100 {
+			border-top-color: #d9edf7;
+		}
+
+		._border-bottom-blue-100 {
+			border-bottom-color: #d9edf7;
+		}
+
+		._border-left-blue-100 {
+			border-left-color: #d9edf7;
+		}
+
+		._border-right-blue-100 {
+			border-right-color: #d9edf7;
+		}
+
+		._text-blue-200 {
+			color: #bce8f1;
+		}
+
+		._text-blue-200[href]:focus,
+		._text-blue-200[href]:hover {
+			color: #bce8f1;
+		}
+
+		._bg-blue-200 {
+			background-color: #bce8f1 !important;
+		}
+
+		._border-blue-200 {
+			border-color: #bce8f1;
+		}
+
+		._border-top-blue-200 {
+			border-top-color: #bce8f1;
+		}
+
+		._border-bottom-blue-200 {
+			border-bottom-color: #bce8f1;
+		}
+
+		._border-left-blue-200 {
+			border-left-color: #bce8f1;
+		}
+
+		._border-right-blue-200 {
+			border-right-color: #bce8f1;
+		}
+
+		._text-blue-300 {
+			color: #afdaff;
+		}
+
+		._text-blue-300[href]:focus,
+		._text-blue-300[href]:hover {
+			color: #afdaff;
+		}
+
+		._bg-blue-300 {
+			background-color: #afdaff !important;
+		}
+
+		._border-blue-300 {
+			border-color: #afdaff;
+		}
+
+		._border-top-blue-300 {
+			border-top-color: #afdaff;
+		}
+
+		._border-bottom-blue-300 {
+			border-bottom-color: #afdaff;
+		}
+
+		._border-left-blue-300 {
+			border-left-color: #afdaff;
+		}
+
+		._border-right-blue-300 {
+			border-right-color: #afdaff;
+		}
+
+		._bg-blue-400 {
+			background-color: #8fcbff !important;
+		}
+
+		._text-blue-500 {
+			color: #0f8fff;
+		}
+
+		._text-blue-500[href]:focus,
+		._text-blue-500[href]:hover {
+			color: #0f8fff;
+		}
+
+		._bg-blue-500 {
+			background-color: #0f8fff;
+		}
+
+		._border-blue-500 {
+			border-color: #0f8fff;
+		}
+
+		._border-top-blue-500 {
+			border-top-color: #0f8fff;
+		}
+
+		._border-bottom-blue-500 {
+			border-bottom-color: #0f8fff;
+		}
+
+		._border-left-blue-500 {
+			border-left-color: #0f8fff;
+		}
+
+		._border-right-blue-500 {
+			border-right-color: #0f8fff;
+		}
+
+		._text-blue-600 {
+			color: #127de8;
+		}
+
+		._text-blue-600[href]:focus,
+		._text-blue-600[href]:hover {
+			color: #127de8;
+		}
+
+		._bg-blue-600 {
+			background-color: #127de8 !important;
+		}
+
+		._border-blue-600 {
+			border-color: #127de8;
+		}
+
+		._border-top-blue-600 {
+			border-top-color: #127de8;
+		}
+
+		._border-bottom-blue-600 {
+			border-bottom-color: #127de8;
+		}
+
+		._border-left-blue-600 {
+			border-left-color: #127de8;
+		}
+
+		._border-right-blue-600 {
+			border-right-color: #127de8;
+		}
+
+		._text-blue-800 {
+			color: #1f2374;
+		}
+
+		._text-blue-800[href]:focus,
+		._text-blue-800[href]:hover {
+			color: #1f2374;
+		}
+
+		._bg-blue-800 {
+			background-color: #1f2374;
+		}
+
+		._border-blue-800 {
+			border-color: #1f2374;
+		}
+
+		._border-top-blue-800 {
+			border-top-color: #1f2374;
+		}
+
+		._border-bottom-blue-800 {
+			border-bottom-color: #1f2374;
+		}
+
+		._border-left-blue-800 {
+			border-left-color: #1f2374;
+		}
+
+		._border-right-blue-800 {
+			border-right-color: #1f2374;
+		}
+
+		._text-zengo {
+			color: #35c4ba !important;
+		}
+
+		._bg-loyalty-program-primary {
+			background-color: #cfe9ff !important;
+		}
+
+		.printable * {
+			display: none;
+		}
+
+		@media print {
+			.printable * {
+				display: block !important;
+			}
+		}
+
+		@media print {
+
+			.no-print,
+			.no-print * {
+				display: none !important;
+			}
+		}
+
+		.margin-auto {
+			margin: 0 auto;
+		}
+
+		#widgetComponentContainerOnSellPage .widgetDropdownInput .wrapperIcon .icon {
+			margin-left: 10px;
+		}
+
+		.widgetDropdownInput {
+			height: 45px;
+			border-radius: 4px;
+			overflow: hidden;
+			background-color: #f3f5f8;
+			margin-right: 2px;
+			width: 310px;
+		}
+
+		.widgetDropdownInput .wrapperIcon {
+			background-color: #f3f5f8;
+			height: inherit;
+			width: 50px;
+			display: inline-block;
+		}
+
+		.widgetDropdownInput .wrapperIcon .icon {
+			height: inherit;
+			vertical-align: middle;
+			padding: 0 1px 0 5px;
+			width: 32px;
+			margin-bottom: 5px;
+		}
+
+		.widgetDropdownInput .inputElem {
+			font-size: 15px;
+			font-family: "Open Sans", Arial, sans-serif;
+			background-color: #f3f5f8;
+			color: #040000;
+			height: 47px;
+			font-family: "Cabin", Arial, sans-serif;
+			width: 180px;
+			border-width: 0px;
+			border: none;
+			-webkit-appearance: none;
+			-moz-appearance: textfield;
+		}
+
+		.widgetDropdownInput .ddToggler {
+			height: inherit;
+			vertical-align: middle;
+			display: inline-block;
+			background-color: #f3f5f8 !important;
+			border-radius: 0 4px 4px 0;
+			width: 76px;
+			margin-bottom: 5px;
+			float: right;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			.widgetDropdownInput .ddToggler {
+				margin-right: 3px;
+			}
+		}
+
+		.widgetDropdownInput .ddToggler:hover {
+			cursor: pointer;
+		}
+
+		.widgetDropdownInput .ddToggler .togglerContent {
+			display: flex;
+			height: inherit;
+			justify-content: center;
+			align-items: center;
+			color: #0f8fff;
+			border-radius: 0 4px 4px 0;
+			font-family: "Cabin", Arial, sans-serif;
+			font-size: 13px;
+			font-weight: bold;
+			line-height: 22px;
+		}
+
+		.widgetDropdownInput .ddToggler .togglerContent img {
+			padding-left: 5px;
+			height: 7px;
+		}
+
+		.widgetDropdownInput .ddToggler .togglerContent span {
+			font-weight: bold;
+		}
+
+		.widgetDropdownInput .chevronBottom::before {
+			border-style: solid;
+			border-width: 0.16em 0.16em 0 0;
+			content: "";
+			display: inline-block;
+			height: 0.5em;
+			left: 0.5em;
+			position: relative;
+			vertical-align: top;
+			width: 0.5em;
+			top: 6px;
+			transform: rotate(135deg);
+		}
+
+		.widgetDropdownInput input::-webkit-outer-spin-button,
+		.widgetDropdownInput input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		.widgetDropdownInput input[type="number"] {
+			-moz-appearance: textfield;
+		}
+
+		.dropdownInputErrors {
+			margin: 0 auto;
+			position: absolute;
+			margin-top: 43px;
+			font-size: 10px;
+			margin-left: 20px;
+		}
+
+		#widgetComponentContainerOnSellPage .dropdownInputErrors {
+			margin-top: 154px !important;
+		}
+
+		.printable * {
+			display: none;
+		}
+
+		@media print {
+			.printable * {
+				display: block !important;
+			}
+		}
+
+		@media print {
+
+			.no-print,
+			.no-print * {
+				display: none !important;
+			}
+		}
+
+		.margin-auto {
+			margin: 0 auto;
+		}
+
+		._shadow-depth-1 {
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+				0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		._shadow-depth-6 {
+			box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+		}
+
+		._shadow-depth-12 {
+			box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+				0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		._text-danger {
+			color: #dc2a2a;
+		}
+
+		._text-danger[href]:focus,
+		._text-danger[href]:hover {
+			color: #dc2a2a;
+		}
+
+		._bg-danger {
+			background-color: #dc2a2a;
+		}
+
+		._border-danger {
+			border-color: #dc2a2a;
+		}
+
+		._border-top-danger {
+			border-top-color: #dc2a2a;
+		}
+
+		._border-bottom-danger {
+			border-bottom-color: #dc2a2a;
+		}
+
+		._border-left-danger {
+			border-left-color: #dc2a2a;
+		}
+
+		._border-right-danger {
+			border-right-color: #dc2a2a;
+		}
+
+		._text-warning {
+			color: #ff9f1c;
+		}
+
+		._text-warning[href]:focus,
+		._text-warning[href]:hover {
+			color: #ff9f1c;
+		}
+
+		._bg-warning {
+			background-color: #ff9f1c;
+		}
+
+		._border-warning {
+			border-color: #ff9f1c;
+		}
+
+		._border-top-warning {
+			border-top-color: #ff9f1c;
+		}
+
+		._border-bottom-warning {
+			border-bottom-color: #ff9f1c;
+		}
+
+		._border-left-warning {
+			border-left-color: #ff9f1c;
+		}
+
+		._border-right-warning {
+			border-right-color: #ff9f1c;
+		}
+
+		._bg-alert-danger {
+			background-color: #f2dede;
+		}
+
+		._border-alert-danger {
+			border-color: #ebccd1;
+		}
+
+		._bg-alert-warning {
+			background-color: #fcf8e3;
+		}
+
+		._border-alert-warning {
+			border-color: #faebcc;
+		}
+
+		._bg-alert-sucess {
+			background-color: #dff0d8;
+		}
+
+		._border-alert-sucess {
+			border-color: #d6e9c6;
+		}
+
+		._bg-alert-info {
+			background-color: #bce8f1;
+		}
+
+		._border-alert-info {
+			border-color: #afdaff;
+		}
+
+		._bg-orange-400 {
+			background-color: #ef8b0c;
+		}
+
+		._bg-orange-500 {
+			background-color: #dc800b;
+		}
+
+		._text-black {
+			color: #000;
+		}
+
+		._text-white {
+			color: #fff;
+		}
+
+		._bg-white {
+			background-color: #fff;
+		}
+
+		._text-grey-200 {
+			color: #f3f5f8;
+		}
+
+		._text-grey-200[href]:focus,
+		._text-grey-200[href]:hover {
+			color: #f3f5f8;
+		}
+
+		._bg-grey-200 {
+			background-color: #f3f5f8;
+		}
+
+		._border-grey-200 {
+			border-color: #f3f5f8;
+		}
+
+		._border-top-grey-200 {
+			border-top-color: #f3f5f8;
+		}
+
+		._border-bottom-grey-200 {
+			border-bottom-color: #f3f5f8;
+		}
+
+		._border-left-grey-200 {
+			border-left-color: #f3f5f8;
+		}
+
+		._border-right-grey-200 {
+			border-right-color: #f3f5f8;
+		}
+
+		._text-grey-300 {
+			color: #b5b7c3;
+		}
+
+		._text-grey-300[href]:focus,
+		._text-grey-300[href]:hover {
+			color: #b5b7c3;
+		}
+
+		._bg-grey-300 {
+			background-color: #b5b7c3;
+		}
+
+		._border-grey-300 {
+			border-color: #b5b7c3;
+		}
+
+		._border-top-grey-300 {
+			border-top-color: #b5b7c3;
+		}
+
+		._border-bottom-grey-300 {
+			border-bottom-color: #b5b7c3;
+		}
+
+		._border-left-grey-300 {
+			border-left-color: #b5b7c3;
+		}
+
+		._border-right-grey-300 {
+			border-right-color: #b5b7c3;
+		}
+
+		._text-grey-400 {
+			color: #acacb6;
+		}
+
+		._text-grey-400[href]:focus,
+		._text-grey-400[href]:hover {
+			color: #acacb6;
+		}
+
+		._bg-grey-400 {
+			background-color: #acacb6;
+		}
+
+		._border-grey-400 {
+			border-color: #acacb6;
+		}
+
+		._border-top-grey-400 {
+			border-top-color: #acacb6;
+		}
+
+		._border-bottom-grey-400 {
+			border-bottom-color: #acacb6;
+		}
+
+		._border-left-grey-400 {
+			border-left-color: #acacb6;
+		}
+
+		._border-right-grey-400 {
+			border-right-color: #acacb6;
+		}
+
+		._text-grey-600 {
+			color: #636371;
+		}
+
+		._text-grey-600[href]:focus,
+		._text-grey-600[href]:hover {
+			color: #636371;
+		}
+
+		._bg-grey-600 {
+			background-color: #636371;
+		}
+
+		._border-grey-600 {
+			border-color: #636371;
+		}
+
+		._border-top-grey-600 {
+			border-top-color: #636371;
+		}
+
+		._border-bottom-grey-600 {
+			border-bottom-color: #636371;
+		}
+
+		._border-left-grey-600 {
+			border-left-color: #636371;
+		}
+
+		._border-right-grey-600 {
+			border-right-color: #636371;
+		}
+
+		._text-grey-700 {
+			color: #474959;
+		}
+
+		._text-grey-700[href]:focus,
+		._text-grey-700[href]:hover {
+			color: #474959;
+		}
+
+		._bg-grey-700 {
+			background-color: #474959;
+		}
+
+		._border-grey-700 {
+			border-color: #474959;
+		}
+
+		._border-top-grey-700 {
+			border-top-color: #474959;
+		}
+
+		._border-bottom-grey-700 {
+			border-bottom-color: #474959;
+		}
+
+		._border-left-grey-700 {
+			border-left-color: #474959;
+		}
+
+		._border-right-grey-700 {
+			border-right-color: #474959;
+		}
+
+		._text-grey-800 {
+			color: #040000;
+		}
+
+		._text-grey-800[href]:focus,
+		._text-grey-800[href]:hover {
+			color: #040000;
+		}
+
+		._bg-grey-800 {
+			background-color: #040000;
+		}
+
+		._border-grey-800 {
+			border-color: #040000;
+		}
+
+		._border-top-grey-800 {
+			border-top-color: #040000;
+		}
+
+		._border-bottom-grey-800 {
+			border-bottom-color: #040000;
+		}
+
+		._border-left-grey-800 {
+			border-left-color: #040000;
+		}
+
+		._border-right-grey-800 {
+			border-right-color: #040000;
+		}
+
+		._text-blue-100 {
+			color: #d9edf7;
+		}
+
+		._text-blue-100[href]:focus,
+		._text-blue-100[href]:hover {
+			color: #d9edf7;
+		}
+
+		._bg-blue-100 {
+			background-color: #d9edf7;
+		}
+
+		._border-blue-100 {
+			border-color: #d9edf7;
+		}
+
+		._border-top-blue-100 {
+			border-top-color: #d9edf7;
+		}
+
+		._border-bottom-blue-100 {
+			border-bottom-color: #d9edf7;
+		}
+
+		._border-left-blue-100 {
+			border-left-color: #d9edf7;
+		}
+
+		._border-right-blue-100 {
+			border-right-color: #d9edf7;
+		}
+
+		._text-blue-200 {
+			color: #bce8f1;
+		}
+
+		._text-blue-200[href]:focus,
+		._text-blue-200[href]:hover {
+			color: #bce8f1;
+		}
+
+		._bg-blue-200 {
+			background-color: #bce8f1 !important;
+		}
+
+		._border-blue-200 {
+			border-color: #bce8f1;
+		}
+
+		._border-top-blue-200 {
+			border-top-color: #bce8f1;
+		}
+
+		._border-bottom-blue-200 {
+			border-bottom-color: #bce8f1;
+		}
+
+		._border-left-blue-200 {
+			border-left-color: #bce8f1;
+		}
+
+		._border-right-blue-200 {
+			border-right-color: #bce8f1;
+		}
+
+		._text-blue-300 {
+			color: #afdaff;
+		}
+
+		._text-blue-300[href]:focus,
+		._text-blue-300[href]:hover {
+			color: #afdaff;
+		}
+
+		._bg-blue-300 {
+			background-color: #afdaff !important;
+		}
+
+		._border-blue-300 {
+			border-color: #afdaff;
+		}
+
+		._border-top-blue-300 {
+			border-top-color: #afdaff;
+		}
+
+		._border-bottom-blue-300 {
+			border-bottom-color: #afdaff;
+		}
+
+		._border-left-blue-300 {
+			border-left-color: #afdaff;
+		}
+
+		._border-right-blue-300 {
+			border-right-color: #afdaff;
+		}
+
+		._bg-blue-400 {
+			background-color: #8fcbff !important;
+		}
+
+		._text-blue-500 {
+			color: #0f8fff;
+		}
+
+		._text-blue-500[href]:focus,
+		._text-blue-500[href]:hover {
+			color: #0f8fff;
+		}
+
+		._bg-blue-500 {
+			background-color: #0f8fff;
+		}
+
+		._border-blue-500 {
+			border-color: #0f8fff;
+		}
+
+		._border-top-blue-500 {
+			border-top-color: #0f8fff;
+		}
+
+		._border-bottom-blue-500 {
+			border-bottom-color: #0f8fff;
+		}
+
+		._border-left-blue-500 {
+			border-left-color: #0f8fff;
+		}
+
+		._border-right-blue-500 {
+			border-right-color: #0f8fff;
+		}
+
+		._text-blue-600 {
+			color: #127de8;
+		}
+
+		._text-blue-600[href]:focus,
+		._text-blue-600[href]:hover {
+			color: #127de8;
+		}
+
+		._bg-blue-600 {
+			background-color: #127de8 !important;
+		}
+
+		._border-blue-600 {
+			border-color: #127de8;
+		}
+
+		._border-top-blue-600 {
+			border-top-color: #127de8;
+		}
+
+		._border-bottom-blue-600 {
+			border-bottom-color: #127de8;
+		}
+
+		._border-left-blue-600 {
+			border-left-color: #127de8;
+		}
+
+		._border-right-blue-600 {
+			border-right-color: #127de8;
+		}
+
+		._text-blue-800 {
+			color: #1f2374;
+		}
+
+		._text-blue-800[href]:focus,
+		._text-blue-800[href]:hover {
+			color: #1f2374;
+		}
+
+		._bg-blue-800 {
+			background-color: #1f2374;
+		}
+
+		._border-blue-800 {
+			border-color: #1f2374;
+		}
+
+		._border-top-blue-800 {
+			border-top-color: #1f2374;
+		}
+
+		._border-bottom-blue-800 {
+			border-bottom-color: #1f2374;
+		}
+
+		._border-left-blue-800 {
+			border-left-color: #1f2374;
+		}
+
+		._border-right-blue-800 {
+			border-right-color: #1f2374;
+		}
+
+		._text-zengo {
+			color: #35c4ba !important;
+		}
+
+		._bg-loyalty-program-primary {
+			background-color: #cfe9ff !important;
+		}
+
+		.itemsWrapper {
+			z-index: 1040;
+		}
+
+		@media only screen and (max-width: 425px) {
+			.itemsWrapper {
+				position: fixed;
+				display: block;
+				top: 0;
+				left: 0;
+				max-height: 100%;
+				overflow-y: auto;
+			}
+		}
+
+		@media only screen and (max-width: under_small_medium) {
+			.itemsWrapper {
+				position: fixed;
+				display: block;
+				top: 0;
+				left: 0;
+				max-height: 100%;
+				overflow-y: auto;
+			}
+		}
+
+		.itemsWrapper .ulClassList {
+			width: 310px;
+			max-width: 320px;
+			position: absolute;
+			margin-top: 10px;
+			list-style-type: none;
+			padding-left: 0;
+			background-color: #fff;
+			border-radius: 2.4px;
+			box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			overflow: hidden;
+			float: right;
+		}
+
+		@media only screen and (max-width: 425px) {
+			.itemsWrapper .ulClassList {
+				width: 100%;
+				border: none !important;
+			}
+		}
+
+		@media only screen and (max-width: under_small_medium) {
+			.itemsWrapper .ulClassList {
+				width: 100%;
+				border: none !important;
+			}
+		}
+
+		@media only screen and (min-width: 1200px) {
+			.itemsWrapper .ulClassList {
+				right: 47px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+			.itemsWrapper .ulClassList {
+				right: 10px;
+			}
+		}
+
+		.itemsWrapper .ulClassList li {
+			background-color: inherit;
+			display: flex;
+			align-items: center;
+			height: 40px;
+			padding-left: 15px;
+			cursor: pointer;
+		}
+
+		@media only screen and (max-width: 425px) {
+			.itemsWrapper .ulClassList li {
+				height: 60px !important;
+			}
+		}
+
+		@media only screen and (max-width: under_small_medium) {
+			.itemsWrapper .ulClassList li {
+				height: 60px !important;
+			}
+		}
+
+		.itemsWrapper .ulClassList li:hover span {
+			font-weight: bold;
+		}
+
+		.itemsWrapper .ulClassList li img {
+			max-width: 22px;
+			float: left;
+		}
+
+		@media only screen and (max-width: 425px) {
+			.itemsWrapper .ulClassList li img {
+				max-width: 40px !important;
+			}
+		}
+
+		@media only screen and (max-width: under_small_medium) {
+			.itemsWrapper .ulClassList li img {
+				max-width: 40px !important;
+			}
+		}
+
+		.itemsWrapper .ulClassList li span {
+			font-family: "Open Sans";
+			padding-left: 20px;
+			font-size: 15px;
+			color: #474959;
+		}
+
+		@media only screen and (max-width: 425px) {
+			.itemsWrapper .ulClassList {
+				height: 100%;
+				width: 100%;
+				position: relative;
+				z-index: 1040;
+				left: 0;
+				top: 0;
+				max-width: unset;
+				margin-top: 0;
+			}
+
+			.itemsWrapper .ulClassList .closeMobileDropdown {
+				height: 70px;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+				top: 0px;
+				text-align: left;
+				padding-top: 2px;
+				padding-left: 13px;
+				background-color: #1f2374;
+				color: white;
+				width: 100vw;
+				display: flex;
+				align-items: center;
+				padding-bottom: 5px;
+			}
+		}
+
+		@media only screen and (max-width: under_small_medium) {
+			.itemsWrapper .ulClassList {
+				height: 100%;
+				width: 100%;
+				position: relative;
+				z-index: 1040;
+				left: 0;
+				top: 0;
+				max-width: unset;
+				margin-top: 0;
+			}
+
+			.itemsWrapper .ulClassList .closeMobileDropdown {
+				height: 70px;
+				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+				top: 0px;
+				text-align: left;
+				padding-top: 2px;
+				padding-left: 13px;
+				background-color: #1f2374;
+				color: white;
+				width: 100vw;
+				display: flex;
+				align-items: center;
+				padding-bottom: 5px;
+			}
+		}
+
+		._shadow-depth-1 {
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+				0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		._shadow-depth-6 {
+			box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+		}
+
+		._shadow-depth-12 {
+			box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+				0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		._text-danger {
+			color: #dc2a2a;
+		}
+
+		._text-danger[href]:focus,
+		._text-danger[href]:hover {
+			color: #dc2a2a;
+		}
+
+		._bg-danger {
+			background-color: #dc2a2a;
+		}
+
+		._border-danger {
+			border-color: #dc2a2a;
+		}
+
+		._border-top-danger {
+			border-top-color: #dc2a2a;
+		}
+
+		._border-bottom-danger {
+			border-bottom-color: #dc2a2a;
+		}
+
+		._border-left-danger {
+			border-left-color: #dc2a2a;
+		}
+
+		._border-right-danger {
+			border-right-color: #dc2a2a;
+		}
+
+		._text-warning {
+			color: #ff9f1c;
+		}
+
+		._text-warning[href]:focus,
+		._text-warning[href]:hover {
+			color: #ff9f1c;
+		}
+
+		._bg-warning {
+			background-color: #ff9f1c;
+		}
+
+		._border-warning {
+			border-color: #ff9f1c;
+		}
+
+		._border-top-warning {
+			border-top-color: #ff9f1c;
+		}
+
+		._border-bottom-warning {
+			border-bottom-color: #ff9f1c;
+		}
+
+		._border-left-warning {
+			border-left-color: #ff9f1c;
+		}
+
+		._border-right-warning {
+			border-right-color: #ff9f1c;
+		}
+
+		._bg-alert-danger {
+			background-color: #f2dede;
+		}
+
+		._border-alert-danger {
+			border-color: #ebccd1;
+		}
+
+		._bg-alert-warning {
+			background-color: #fcf8e3;
+		}
+
+		._border-alert-warning {
+			border-color: #faebcc;
+		}
+
+		._bg-alert-sucess {
+			background-color: #dff0d8;
+		}
+
+		._border-alert-sucess {
+			border-color: #d6e9c6;
+		}
+
+		._bg-alert-info {
+			background-color: #bce8f1;
+		}
+
+		._border-alert-info {
+			border-color: #afdaff;
+		}
+
+		._bg-orange-400 {
+			background-color: #ef8b0c;
+		}
+
+		._bg-orange-500 {
+			background-color: #dc800b;
+		}
+
+		._text-black {
+			color: #000;
+		}
+
+		._text-white {
+			color: #fff;
+		}
+
+		._bg-white {
+			background-color: #fff;
+		}
+
+		._text-grey-200 {
+			color: #f3f5f8;
+		}
+
+		._text-grey-200[href]:focus,
+		._text-grey-200[href]:hover {
+			color: #f3f5f8;
+		}
+
+		._bg-grey-200 {
+			background-color: #f3f5f8;
+		}
+
+		._border-grey-200 {
+			border-color: #f3f5f8;
+		}
+
+		._border-top-grey-200 {
+			border-top-color: #f3f5f8;
+		}
+
+		._border-bottom-grey-200 {
+			border-bottom-color: #f3f5f8;
+		}
+
+		._border-left-grey-200 {
+			border-left-color: #f3f5f8;
+		}
+
+		._border-right-grey-200 {
+			border-right-color: #f3f5f8;
+		}
+
+		._text-grey-300 {
+			color: #b5b7c3;
+		}
+
+		._text-grey-300[href]:focus,
+		._text-grey-300[href]:hover {
+			color: #b5b7c3;
+		}
+
+		._bg-grey-300 {
+			background-color: #b5b7c3;
+		}
+
+		._border-grey-300 {
+			border-color: #b5b7c3;
+		}
+
+		._border-top-grey-300 {
+			border-top-color: #b5b7c3;
+		}
+
+		._border-bottom-grey-300 {
+			border-bottom-color: #b5b7c3;
+		}
+
+		._border-left-grey-300 {
+			border-left-color: #b5b7c3;
+		}
+
+		._border-right-grey-300 {
+			border-right-color: #b5b7c3;
+		}
+
+		._text-grey-400 {
+			color: #acacb6;
+		}
+
+		._text-grey-400[href]:focus,
+		._text-grey-400[href]:hover {
+			color: #acacb6;
+		}
+
+		._bg-grey-400 {
+			background-color: #acacb6;
+		}
+
+		._border-grey-400 {
+			border-color: #acacb6;
+		}
+
+		._border-top-grey-400 {
+			border-top-color: #acacb6;
+		}
+
+		._border-bottom-grey-400 {
+			border-bottom-color: #acacb6;
+		}
+
+		._border-left-grey-400 {
+			border-left-color: #acacb6;
+		}
+
+		._border-right-grey-400 {
+			border-right-color: #acacb6;
+		}
+
+		._text-grey-600 {
+			color: #636371;
+		}
+
+		._text-grey-600[href]:focus,
+		._text-grey-600[href]:hover {
+			color: #636371;
+		}
+
+		._bg-grey-600 {
+			background-color: #636371;
+		}
+
+		._border-grey-600 {
+			border-color: #636371;
+		}
+
+		._border-top-grey-600 {
+			border-top-color: #636371;
+		}
+
+		._border-bottom-grey-600 {
+			border-bottom-color: #636371;
+		}
+
+		._border-left-grey-600 {
+			border-left-color: #636371;
+		}
+
+		._border-right-grey-600 {
+			border-right-color: #636371;
+		}
+
+		._text-grey-700 {
+			color: #474959;
+		}
+
+		._text-grey-700[href]:focus,
+		._text-grey-700[href]:hover {
+			color: #474959;
+		}
+
+		._bg-grey-700 {
+			background-color: #474959;
+		}
+
+		._border-grey-700 {
+			border-color: #474959;
+		}
+
+		._border-top-grey-700 {
+			border-top-color: #474959;
+		}
+
+		._border-bottom-grey-700 {
+			border-bottom-color: #474959;
+		}
+
+		._border-left-grey-700 {
+			border-left-color: #474959;
+		}
+
+		._border-right-grey-700 {
+			border-right-color: #474959;
+		}
+
+		._text-grey-800 {
+			color: #040000;
+		}
+
+		._text-grey-800[href]:focus,
+		._text-grey-800[href]:hover {
+			color: #040000;
+		}
+
+		._bg-grey-800 {
+			background-color: #040000;
+		}
+
+		._border-grey-800 {
+			border-color: #040000;
+		}
+
+		._border-top-grey-800 {
+			border-top-color: #040000;
+		}
+
+		._border-bottom-grey-800 {
+			border-bottom-color: #040000;
+		}
+
+		._border-left-grey-800 {
+			border-left-color: #040000;
+		}
+
+		._border-right-grey-800 {
+			border-right-color: #040000;
+		}
+
+		._text-blue-100 {
+			color: #d9edf7;
+		}
+
+		._text-blue-100[href]:focus,
+		._text-blue-100[href]:hover {
+			color: #d9edf7;
+		}
+
+		._bg-blue-100 {
+			background-color: #d9edf7;
+		}
+
+		._border-blue-100 {
+			border-color: #d9edf7;
+		}
+
+		._border-top-blue-100 {
+			border-top-color: #d9edf7;
+		}
+
+		._border-bottom-blue-100 {
+			border-bottom-color: #d9edf7;
+		}
+
+		._border-left-blue-100 {
+			border-left-color: #d9edf7;
+		}
+
+		._border-right-blue-100 {
+			border-right-color: #d9edf7;
+		}
+
+		._text-blue-200 {
+			color: #bce8f1;
+		}
+
+		._text-blue-200[href]:focus,
+		._text-blue-200[href]:hover {
+			color: #bce8f1;
+		}
+
+		._bg-blue-200 {
+			background-color: #bce8f1 !important;
+		}
+
+		._border-blue-200 {
+			border-color: #bce8f1;
+		}
+
+		._border-top-blue-200 {
+			border-top-color: #bce8f1;
+		}
+
+		._border-bottom-blue-200 {
+			border-bottom-color: #bce8f1;
+		}
+
+		._border-left-blue-200 {
+			border-left-color: #bce8f1;
+		}
+
+		._border-right-blue-200 {
+			border-right-color: #bce8f1;
+		}
+
+		._text-blue-300 {
+			color: #afdaff;
+		}
+
+		._text-blue-300[href]:focus,
+		._text-blue-300[href]:hover {
+			color: #afdaff;
+		}
+
+		._bg-blue-300 {
+			background-color: #afdaff !important;
+		}
+
+		._border-blue-300 {
+			border-color: #afdaff;
+		}
+
+		._border-top-blue-300 {
+			border-top-color: #afdaff;
+		}
+
+		._border-bottom-blue-300 {
+			border-bottom-color: #afdaff;
+		}
+
+		._border-left-blue-300 {
+			border-left-color: #afdaff;
+		}
+
+		._border-right-blue-300 {
+			border-right-color: #afdaff;
+		}
+
+		._bg-blue-400 {
+			background-color: #8fcbff !important;
+		}
+
+		._text-blue-500 {
+			color: #0f8fff;
+		}
+
+		._text-blue-500[href]:focus,
+		._text-blue-500[href]:hover {
+			color: #0f8fff;
+		}
+
+		._bg-blue-500 {
+			background-color: #0f8fff;
+		}
+
+		._border-blue-500 {
+			border-color: #0f8fff;
+		}
+
+		._border-top-blue-500 {
+			border-top-color: #0f8fff;
+		}
+
+		._border-bottom-blue-500 {
+			border-bottom-color: #0f8fff;
+		}
+
+		._border-left-blue-500 {
+			border-left-color: #0f8fff;
+		}
+
+		._border-right-blue-500 {
+			border-right-color: #0f8fff;
+		}
+
+		._text-blue-600 {
+			color: #127de8;
+		}
+
+		._text-blue-600[href]:focus,
+		._text-blue-600[href]:hover {
+			color: #127de8;
+		}
+
+		._bg-blue-600 {
+			background-color: #127de8 !important;
+		}
+
+		._border-blue-600 {
+			border-color: #127de8;
+		}
+
+		._border-top-blue-600 {
+			border-top-color: #127de8;
+		}
+
+		._border-bottom-blue-600 {
+			border-bottom-color: #127de8;
+		}
+
+		._border-left-blue-600 {
+			border-left-color: #127de8;
+		}
+
+		._border-right-blue-600 {
+			border-right-color: #127de8;
+		}
+
+		._text-blue-800 {
+			color: #1f2374;
+		}
+
+		._text-blue-800[href]:focus,
+		._text-blue-800[href]:hover {
+			color: #1f2374;
+		}
+
+		._bg-blue-800 {
+			background-color: #1f2374;
+		}
+
+		._border-blue-800 {
+			border-color: #1f2374;
+		}
+
+		._border-top-blue-800 {
+			border-top-color: #1f2374;
+		}
+
+		._border-bottom-blue-800 {
+			border-bottom-color: #1f2374;
+		}
+
+		._border-left-blue-800 {
+			border-left-color: #1f2374;
+		}
+
+		._border-right-blue-800 {
+			border-right-color: #1f2374;
+		}
+
+		._text-zengo {
+			color: #35c4ba !important;
+		}
+
+		._bg-loyalty-program-primary {
+			background-color: #cfe9ff !important;
+		}
+
+		.tab-list {
+			border-radius: 4px 4px 0 0;
+			padding-left: 0;
+			border: none;
+		}
+
+		.tab-list-item {
+			background-image: linear-gradient(#fff, #f2f2f2);
+			height: 50px;
+			padding-top: 13px;
+			text-align: center;
+			display: inline-block;
+			list-style: none;
+			margin-bottom: -1px;
+			cursor: pointer;
+			font-family: "Open Sans";
+			font-weight: bold;
+			font-size: 18px;
+			border-radius: 4px 4px 0 0;
+		}
+
+		.tab-list-item:first-child {
+			box-shadow: inset -13px 0 34px -21px rgba(0, 0, 0, 0.2);
+		}
+
+		.tab-list-item:last-child {
+			box-shadow: inset 13px 0 34px -21px rgba(0, 0, 0, 0.2);
+		}
+
+		.tab-list-active {
+			border-bottom: solid 3px #0f8fff;
+			color: #0f8fff;
+			box-shadow: none !important;
+			cursor: default;
+		}
+
+		.printable * {
+			display: none;
+		}
+
+		@media print {
+			.printable * {
+				display: block !important;
+			}
+		}
+
+		@media print {
+
+			.no-print,
+			.no-print * {
+				display: none !important;
+			}
+		}
+
+		.margin-auto {
+			margin: 0 auto;
+		}
+
+		._shadow-depth-1 {
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+				0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		._shadow-depth-6 {
+			box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+		}
+
+		._shadow-depth-12 {
+			box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+				0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		._text-danger {
+			color: #dc2a2a;
+		}
+
+		._text-danger[href]:focus,
+		._text-danger[href]:hover {
+			color: #dc2a2a;
+		}
+
+		._bg-danger {
+			background-color: #dc2a2a;
+		}
+
+		._border-danger {
+			border-color: #dc2a2a;
+		}
+
+		._border-top-danger {
+			border-top-color: #dc2a2a;
+		}
+
+		._border-bottom-danger {
+			border-bottom-color: #dc2a2a;
+		}
+
+		._border-left-danger {
+			border-left-color: #dc2a2a;
+		}
+
+		._border-right-danger {
+			border-right-color: #dc2a2a;
+		}
+
+		._text-warning {
+			color: #ff9f1c;
+		}
+
+		._text-warning[href]:focus,
+		._text-warning[href]:hover {
+			color: #ff9f1c;
+		}
+
+		._bg-warning {
+			background-color: #ff9f1c;
+		}
+
+		._border-warning {
+			border-color: #ff9f1c;
+		}
+
+		._border-top-warning {
+			border-top-color: #ff9f1c;
+		}
+
+		._border-bottom-warning {
+			border-bottom-color: #ff9f1c;
+		}
+
+		._border-left-warning {
+			border-left-color: #ff9f1c;
+		}
+
+		._border-right-warning {
+			border-right-color: #ff9f1c;
+		}
+
+		._bg-alert-danger {
+			background-color: #f2dede;
+		}
+
+		._border-alert-danger {
+			border-color: #ebccd1;
+		}
+
+		._bg-alert-warning {
+			background-color: #fcf8e3;
+		}
+
+		._border-alert-warning {
+			border-color: #faebcc;
+		}
+
+		._bg-alert-sucess {
+			background-color: #dff0d8;
+		}
+
+		._border-alert-sucess {
+			border-color: #d6e9c6;
+		}
+
+		._bg-alert-info {
+			background-color: #bce8f1;
+		}
+
+		._border-alert-info {
+			border-color: #afdaff;
+		}
+
+		._bg-orange-400 {
+			background-color: #ef8b0c;
+		}
+
+		._bg-orange-500 {
+			background-color: #dc800b;
+		}
+
+		._text-black {
+			color: #000;
+		}
+
+		._text-white {
+			color: #fff;
+		}
+
+		._bg-white {
+			background-color: #fff;
+		}
+
+		._text-grey-200 {
+			color: #f3f5f8;
+		}
+
+		._text-grey-200[href]:focus,
+		._text-grey-200[href]:hover {
+			color: #f3f5f8;
+		}
+
+		._bg-grey-200 {
+			background-color: #f3f5f8;
+		}
+
+		._border-grey-200 {
+			border-color: #f3f5f8;
+		}
+
+		._border-top-grey-200 {
+			border-top-color: #f3f5f8;
+		}
+
+		._border-bottom-grey-200 {
+			border-bottom-color: #f3f5f8;
+		}
+
+		._border-left-grey-200 {
+			border-left-color: #f3f5f8;
+		}
+
+		._border-right-grey-200 {
+			border-right-color: #f3f5f8;
+		}
+
+		._text-grey-300 {
+			color: #b5b7c3;
+		}
+
+		._text-grey-300[href]:focus,
+		._text-grey-300[href]:hover {
+			color: #b5b7c3;
+		}
+
+		._bg-grey-300 {
+			background-color: #b5b7c3;
+		}
+
+		._border-grey-300 {
+			border-color: #b5b7c3;
+		}
+
+		._border-top-grey-300 {
+			border-top-color: #b5b7c3;
+		}
+
+		._border-bottom-grey-300 {
+			border-bottom-color: #b5b7c3;
+		}
+
+		._border-left-grey-300 {
+			border-left-color: #b5b7c3;
+		}
+
+		._border-right-grey-300 {
+			border-right-color: #b5b7c3;
+		}
+
+		._text-grey-400 {
+			color: #acacb6;
+		}
+
+		._text-grey-400[href]:focus,
+		._text-grey-400[href]:hover {
+			color: #acacb6;
+		}
+
+		._bg-grey-400 {
+			background-color: #acacb6;
+		}
+
+		._border-grey-400 {
+			border-color: #acacb6;
+		}
+
+		._border-top-grey-400 {
+			border-top-color: #acacb6;
+		}
+
+		._border-bottom-grey-400 {
+			border-bottom-color: #acacb6;
+		}
+
+		._border-left-grey-400 {
+			border-left-color: #acacb6;
+		}
+
+		._border-right-grey-400 {
+			border-right-color: #acacb6;
+		}
+
+		._text-grey-600 {
+			color: #636371;
+		}
+
+		._text-grey-600[href]:focus,
+		._text-grey-600[href]:hover {
+			color: #636371;
+		}
+
+		._bg-grey-600 {
+			background-color: #636371;
+		}
+
+		._border-grey-600 {
+			border-color: #636371;
+		}
+
+		._border-top-grey-600 {
+			border-top-color: #636371;
+		}
+
+		._border-bottom-grey-600 {
+			border-bottom-color: #636371;
+		}
+
+		._border-left-grey-600 {
+			border-left-color: #636371;
+		}
+
+		._border-right-grey-600 {
+			border-right-color: #636371;
+		}
+
+		._text-grey-700 {
+			color: #474959;
+		}
+
+		._text-grey-700[href]:focus,
+		._text-grey-700[href]:hover {
+			color: #474959;
+		}
+
+		._bg-grey-700 {
+			background-color: #474959;
+		}
+
+		._border-grey-700 {
+			border-color: #474959;
+		}
+
+		._border-top-grey-700 {
+			border-top-color: #474959;
+		}
+
+		._border-bottom-grey-700 {
+			border-bottom-color: #474959;
+		}
+
+		._border-left-grey-700 {
+			border-left-color: #474959;
+		}
+
+		._border-right-grey-700 {
+			border-right-color: #474959;
+		}
+
+		._text-grey-800 {
+			color: #040000;
+		}
+
+		._text-grey-800[href]:focus,
+		._text-grey-800[href]:hover {
+			color: #040000;
+		}
+
+		._bg-grey-800 {
+			background-color: #040000;
+		}
+
+		._border-grey-800 {
+			border-color: #040000;
+		}
+
+		._border-top-grey-800 {
+			border-top-color: #040000;
+		}
+
+		._border-bottom-grey-800 {
+			border-bottom-color: #040000;
+		}
+
+		._border-left-grey-800 {
+			border-left-color: #040000;
+		}
+
+		._border-right-grey-800 {
+			border-right-color: #040000;
+		}
+
+		._text-blue-100 {
+			color: #d9edf7;
+		}
+
+		._text-blue-100[href]:focus,
+		._text-blue-100[href]:hover {
+			color: #d9edf7;
+		}
+
+		._bg-blue-100 {
+			background-color: #d9edf7;
+		}
+
+		._border-blue-100 {
+			border-color: #d9edf7;
+		}
+
+		._border-top-blue-100 {
+			border-top-color: #d9edf7;
+		}
+
+		._border-bottom-blue-100 {
+			border-bottom-color: #d9edf7;
+		}
+
+		._border-left-blue-100 {
+			border-left-color: #d9edf7;
+		}
+
+		._border-right-blue-100 {
+			border-right-color: #d9edf7;
+		}
+
+		._text-blue-200 {
+			color: #bce8f1;
+		}
+
+		._text-blue-200[href]:focus,
+		._text-blue-200[href]:hover {
+			color: #bce8f1;
+		}
+
+		._bg-blue-200 {
+			background-color: #bce8f1 !important;
+		}
+
+		._border-blue-200 {
+			border-color: #bce8f1;
+		}
+
+		._border-top-blue-200 {
+			border-top-color: #bce8f1;
+		}
+
+		._border-bottom-blue-200 {
+			border-bottom-color: #bce8f1;
+		}
+
+		._border-left-blue-200 {
+			border-left-color: #bce8f1;
+		}
+
+		._border-right-blue-200 {
+			border-right-color: #bce8f1;
+		}
+
+		._text-blue-300 {
+			color: #afdaff;
+		}
+
+		._text-blue-300[href]:focus,
+		._text-blue-300[href]:hover {
+			color: #afdaff;
+		}
+
+		._bg-blue-300 {
+			background-color: #afdaff !important;
+		}
+
+		._border-blue-300 {
+			border-color: #afdaff;
+		}
+
+		._border-top-blue-300 {
+			border-top-color: #afdaff;
+		}
+
+		._border-bottom-blue-300 {
+			border-bottom-color: #afdaff;
+		}
+
+		._border-left-blue-300 {
+			border-left-color: #afdaff;
+		}
+
+		._border-right-blue-300 {
+			border-right-color: #afdaff;
+		}
+
+		._bg-blue-400 {
+			background-color: #8fcbff !important;
+		}
+
+		._text-blue-500 {
+			color: #0f8fff;
+		}
+
+		._text-blue-500[href]:focus,
+		._text-blue-500[href]:hover {
+			color: #0f8fff;
+		}
+
+		._bg-blue-500 {
+			background-color: #0f8fff;
+		}
+
+		._border-blue-500 {
+			border-color: #0f8fff;
+		}
+
+		._border-top-blue-500 {
+			border-top-color: #0f8fff;
+		}
+
+		._border-bottom-blue-500 {
+			border-bottom-color: #0f8fff;
+		}
+
+		._border-left-blue-500 {
+			border-left-color: #0f8fff;
+		}
+
+		._border-right-blue-500 {
+			border-right-color: #0f8fff;
+		}
+
+		._text-blue-600 {
+			color: #127de8;
+		}
+
+		._text-blue-600[href]:focus,
+		._text-blue-600[href]:hover {
+			color: #127de8;
+		}
+
+		._bg-blue-600 {
+			background-color: #127de8 !important;
+		}
+
+		._border-blue-600 {
+			border-color: #127de8;
+		}
+
+		._border-top-blue-600 {
+			border-top-color: #127de8;
+		}
+
+		._border-bottom-blue-600 {
+			border-bottom-color: #127de8;
+		}
+
+		._border-left-blue-600 {
+			border-left-color: #127de8;
+		}
+
+		._border-right-blue-600 {
+			border-right-color: #127de8;
+		}
+
+		._text-blue-800 {
+			color: #1f2374;
+		}
+
+		._text-blue-800[href]:focus,
+		._text-blue-800[href]:hover {
+			color: #1f2374;
+		}
+
+		._bg-blue-800 {
+			background-color: #1f2374;
+		}
+
+		._border-blue-800 {
+			border-color: #1f2374;
+		}
+
+		._border-top-blue-800 {
+			border-top-color: #1f2374;
+		}
+
+		._border-bottom-blue-800 {
+			border-bottom-color: #1f2374;
+		}
+
+		._border-left-blue-800 {
+			border-left-color: #1f2374;
+		}
+
+		._border-right-blue-800 {
+			border-right-color: #1f2374;
+		}
+
+		._text-zengo {
+			color: #35c4ba !important;
+		}
+
+		._bg-loyalty-program-primary {
+			background-color: #cfe9ff !important;
+		}
+
+		#widgetComponentContainerOnSellPage,
+		#widgetComponentContainerOnBuyPage {
+			box-shadow: none !important;
+			height: auto !important;
+			top: 0 !important;
+			margin: 0 auto !important;
+			float: none !important;
+			max-width: 310px !important;
+		}
+
+		#widgetComponentContainerOnBuyPage .ulClassList {
+			right: 0 !important;
+			z-index: 100;
+		}
+
+		#widgetComponentContainerOnMyAccount {
+			height: 335px;
+			margin: 0 auto !important;
+			max-width: 330px !important;
+			top: 0 !important;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+		}
+
+		#widgetComponentContainerOnMyAccount .ulClassList {
+			right: 10px !important;
+			z-index: 100;
+		}
+
+		@media (min-width: 1366px) {
+			#widgetComponentContainerOnMyAccount {
+				float: none !important;
+			}
+		}
+
+		#widgetComponentContainerOnMyAccount .tabs {
+			top: 0px !important;
+		}
+
+		#widgetComponentContainerOnMyAccount .tabs .tab-list-item {
+			width: 165px !important;
+			background-image: unset !important;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2) !important;
+		}
+
+		#widgetComponentContainerOnMyAccount .tabs .tab-content-raw {
+			padding: 0 10px !important;
+		}
+
+		#widgetComponentContainerOnMyAccount .tabs .tab-content-raw:last-child {
+			left: -16px !important;
+		}
+
+		#widgetComponentContainerOnMyAccount #widgetBuyBtn,
+		#widgetComponentContainerOnMyAccount #widgetSellBtn {
+			margin-top: 9px !important;
+		}
+
+		#widgetComponentContainerOnMyAccount .widgetRates {
+			margin: 13px 0 8px !important;
+		}
+
+		.widgetComponentAbVariationB,
+		.widgetComponentAbVariationC {
+			height: 390px !important;
+		}
+
+		.widgetComponentAbVariationAccB,
+		.widgetComponentAbVariationAccC {
+			height: 360px !important;
+		}
+
+		#widgetComponentContainerOnHomePage,
+		#widgetComponentContainerOnSellPage,
+		#widgetComponentContainerOnBuyPage {
+			height: 364px;
+		}
+
+		#widgetComponentContainerOnHomePage,
+		#widgetComponentContainerOnSellPage,
+		#widgetComponentContainerOnBuyPage,
+		#widgetComponentContainerOnMyAccount {
+			position: relative;
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		@media only screen and (min-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage,
+			#widgetComponentContainerOnSellPage,
+			#widgetComponentContainerOnBuyPage,
+			#widgetComponentContainerOnMyAccount {
+				width: 400px;
+				margin: 0 auto;
+				// float: left;
+				// top: 35px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage,
+			#widgetComponentContainerOnSellPage,
+			#widgetComponentContainerOnBuyPage,
+			#widgetComponentContainerOnMyAccount {
+				top: 30px;
+				width: 330px;
+				margin: 0 auto;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage form,
+		#widgetComponentContainerOnSellPage form,
+		#widgetComponentContainerOnBuyPage form,
+		#widgetComponentContainerOnMyAccount form {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#widgetComponentContainerOnHomePage form #widgetBuyBtn,
+		#widgetComponentContainerOnHomePage form #widgetSellBtn,
+		#widgetComponentContainerOnSellPage form #widgetBuyBtn,
+		#widgetComponentContainerOnSellPage form #widgetSellBtn,
+		#widgetComponentContainerOnBuyPage form #widgetBuyBtn,
+		#widgetComponentContainerOnBuyPage form #widgetSellBtn,
+		#widgetComponentContainerOnMyAccount form #widgetBuyBtn,
+		#widgetComponentContainerOnMyAccount form #widgetSellBtn {
+			margin-top: 20px;
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverWarning {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			left: 0;
+			width: 0;
+			height: 2px;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHover {
+			transition: 0.2s ease all;
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverError {
+			background-color: #dc2a2a;
+			width: 100%;
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnHomePage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .sellRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .buyRow .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .sellRow .inputBottomHoverWarning {
+			background-color: #ff9f1c;
+			width: 100%;
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnHomePage form .sellRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .buyRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .sellRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .buyRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .sellRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .buyRow:focus-within .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .sellRow:focus-within .inputBottomHover {
+			background-color: #0f8fff !important;
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 769px) {
+
+			#widgetComponentContainerOnHomePage form .buyRow:hover .inputBottomHover,
+			#widgetComponentContainerOnHomePage form .sellRow:hover .inputBottomHover,
+			#widgetComponentContainerOnSellPage form .buyRow:hover .inputBottomHover,
+			#widgetComponentContainerOnSellPage form .sellRow:hover .inputBottomHover,
+			#widgetComponentContainerOnBuyPage form .buyRow:hover .inputBottomHover,
+			#widgetComponentContainerOnBuyPage form .sellRow:hover .inputBottomHover,
+			#widgetComponentContainerOnMyAccount form .buyRow:hover .inputBottomHover,
+			#widgetComponentContainerOnMyAccount form .sellRow:hover .inputBottomHover {
+				background-color: #636371;
+				width: 100%;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage form .buyRow .dropdownInputErrors,
+		#widgetComponentContainerOnHomePage form .sellRow .dropdownInputErrors,
+		#widgetComponentContainerOnSellPage form .buyRow .dropdownInputErrors,
+		#widgetComponentContainerOnSellPage form .sellRow .dropdownInputErrors,
+		#widgetComponentContainerOnBuyPage form .buyRow .dropdownInputErrors,
+		#widgetComponentContainerOnBuyPage form .sellRow .dropdownInputErrors,
+		#widgetComponentContainerOnMyAccount form .buyRow .dropdownInputErrors,
+		#widgetComponentContainerOnMyAccount form .sellRow .dropdownInputErrors {
+			margin-top: -3px !important;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs,
+		#widgetComponentContainerOnSellPage form .tabs,
+		#widgetComponentContainerOnBuyPage form .tabs,
+		#widgetComponentContainerOnMyAccount form .tabs {
+			position: relative;
+			top: -16px;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+			display: grid;
+		}
+
+		@media only screen and (min-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+				padding: 0 44px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw,
+			#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw {
+				padding: 0 10px;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:last-child,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:last-child,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:last-child,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:last-child {
+			position: relative;
+			left: -8px;
+			top: 10px;
+			width: 110%;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning {
+			display: inline-block;
+			position: relative;
+			margin: 0 auto;
+			left: -1px;
+			width: 0;
+			height: 2px;
+			border-bottom-right-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHover {
+			transition: 0.2s ease all;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverError,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverError {
+			background-color: #dc2a2a;
+			width: 99%;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw .inputBottomHoverWarning {
+			background-color: #ff9f1c;
+			width: 99%;
+		}
+
+		#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+		#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+		#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover,
+		#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:focus-within .inputBottomHover {
+			background-color: #0f8fff !important;
+			width: 99%;
+		}
+
+		@media only screen and (min-width: 769px) {
+
+			#widgetComponentContainerOnHomePage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+			#widgetComponentContainerOnSellPage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+			#widgetComponentContainerOnBuyPage form .tabs .tab-content .tab-content-raw:hover .inputBottomHover,
+			#widgetComponentContainerOnMyAccount form .tabs .tab-content .tab-content-raw:hover .inputBottomHover {
+				background-color: #636371;
+				width: 99%;
+			}
+		}
+
+		@media only screen and (min-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage form .tabs .tab-list-item,
+			#widgetComponentContainerOnSellPage form .tabs .tab-list-item,
+			#widgetComponentContainerOnBuyPage form .tabs .tab-list-item,
+			#widgetComponentContainerOnMyAccount form .tabs .tab-list-item {
+				width: 200px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage form .tabs .tab-list-item,
+			#widgetComponentContainerOnSellPage form .tabs .tab-list-item,
+			#widgetComponentContainerOnBuyPage form .tabs .tab-list-item,
+			#widgetComponentContainerOnMyAccount form .tabs .tab-list-item {
+				width: 165px;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInput,
+		#widgetComponentContainerOnSellPage form .dropdownInput,
+		#widgetComponentContainerOnBuyPage form .dropdownInput,
+		#widgetComponentContainerOnMyAccount form .dropdownInput {
+			flex-direction: row;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInputSubmit,
+		#widgetComponentContainerOnSellPage form .dropdownInputSubmit,
+		#widgetComponentContainerOnBuyPage form .dropdownInputSubmit,
+		#widgetComponentContainerOnMyAccount form .dropdownInputSubmit {
+			margin: 0 auto;
+			margin-top: 20px;
+			height: 60px;
+			width: 320px;
+			border-radius: 4px;
+			background-color: #ef8b0c;
+			outline: none;
+			box-shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.3);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			font-family: "Open Sans", Arial, sans-serif;
+			font-size: 20px;
+			font-weight: bold;
+			line-height: 27px;
+			text-align: center;
+			border-color: transparent;
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInputSubmit:hover,
+		#widgetComponentContainerOnSellPage form .dropdownInputSubmit:hover,
+		#widgetComponentContainerOnBuyPage form .dropdownInputSubmit:hover,
+		#widgetComponentContainerOnMyAccount form .dropdownInputSubmit:hover {
+			background-color: #cc7508;
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInputSubmit:active,
+		#widgetComponentContainerOnSellPage form .dropdownInputSubmit:active,
+		#widgetComponentContainerOnBuyPage form .dropdownInputSubmit:active,
+		#widgetComponentContainerOnMyAccount form .dropdownInputSubmit:active {
+			box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy,
+		#widgetComponentContainerOnHomePage form .moreIconsSell,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy,
+		#widgetComponentContainerOnSellPage form .moreIconsSell,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell {
+			position: relative;
+			top: 22px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul {
+			list-style-type: none;
+			display: contents;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li {
+			float: left;
+			height: 30px;
+			min-width: 30px;
+			margin: 0 2px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-origin: content-box;
+			background-size: cover;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.visaIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.visaIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.visaIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.visaIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.visaIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.visaIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.visaIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.visaIcon {
+			background-image: url("//assets.coinmama.com/icons/visa_blue.svg");
+			background-size: 40px;
+			width: 46px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.masterCardIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.masterCardIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.masterCardIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.masterCardIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.masterCardIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.masterCardIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.masterCardIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.masterCardIcon {
+			background-image: url("//assets.coinmama.com/icons/mc_black.svg");
+			width: 30px;
+			background-size: 30px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.sepaIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.sepaIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.sepaIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.sepaIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.sepaIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.sepaIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.sepaIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.sepaIcon {
+			background-image: url("//assets.coinmama.com/icons/SEPA.svg");
+			background-size: 48px;
+			width: 54px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.applePayIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.applePayIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.applePayIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.applePayIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.applePayIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.applePayIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.applePayIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.applePayIcon {
+			background-image: url("//assets.coinmama.com/icons/Apple_Pay.svg");
+			width: 47px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.googlePayIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.googlePayIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.googlePayIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.googlePayIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.googlePayIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.googlePayIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.googlePayIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.googlePayIcon {
+			background-image: url("//assets.coinmama.com/icons/google_pay.svg");
+			width: 50px;
+			background-size: 50px;
+			margin-left: 5px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.swiftIcon,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.swiftIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.swiftIcon,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.swiftIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.swiftIcon,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.swiftIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.swiftIcon,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.swiftIcon {
+			background-image: url("//assets.coinmama.com/icons/Swift.svg");
+			width: 45px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.ibt {
+			font-size: 14px;
+			color: #1f2374;
+			font-family: "Cabin", Arial, sans-serif;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.andMore,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.andMore,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.andMore {
+			padding-left: 8px;
+			padding-top: 2px;
+		}
+
+		#widgetComponentContainerOnHomePage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnHomePage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnSellPage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnSellPage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnBuyPage form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnBuyPage form .moreIconsSell ul li.ibt,
+		#widgetComponentContainerOnMyAccount form .moreIconsBuy ul li.ibt,
+		#widgetComponentContainerOnMyAccount form .moreIconsSell ul li.ibt {
+			font-size: 16px !important;
+			padding-left: 10px;
+			padding-top: 4px;
+			width: 195px;
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInputSubmitWidget,
+		#widgetComponentContainerOnSellPage form .dropdownInputSubmitWidget,
+		#widgetComponentContainerOnBuyPage form .dropdownInputSubmitWidget,
+		#widgetComponentContainerOnMyAccount form .dropdownInputSubmitWidget {
+			display: block;
+			position: relative;
+			top: 20px;
+			width: 310px;
+			height: 50px;
+			border: none;
+			border-radius: 4px;
+			background-color: #0f8fff;
+			box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		#widgetComponentContainerOnHomePage form .dropdownInputSubmitWidget:hover,
+		#widgetComponentContainerOnSellPage form .dropdownInputSubmitWidget:hover,
+		#widgetComponentContainerOnBuyPage form .dropdownInputSubmitWidget:hover,
+		#widgetComponentContainerOnMyAccount form .dropdownInputSubmitWidget:hover {
+			background-color: #127de8;
+		}
+
+		#widgetComponentContainerOnHomePage form .select-all-balance,
+		#widgetComponentContainerOnSellPage form .select-all-balance,
+		#widgetComponentContainerOnBuyPage form .select-all-balance,
+		#widgetComponentContainerOnMyAccount form .select-all-balance {
+			font-size: 14px;
+			line-height: 19px;
+			width: 308px;
+			font-weight: bold;
+			text-align: right;
+			color: #0f8fff;
+			font-family: "Open Sans";
+			letter-spacing: 0;
+			margin: 5px auto 0 auto;
+		}
+
+		@media (min-width: 769px) {
+
+			#widgetComponentContainerOnHomePage form .select-all-balance,
+			#widgetComponentContainerOnSellPage form .select-all-balance,
+			#widgetComponentContainerOnBuyPage form .select-all-balance,
+			#widgetComponentContainerOnMyAccount form .select-all-balance {
+				line-height: 22px;
+				font-size: 16px;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage form .select-all-balance span,
+		#widgetComponentContainerOnSellPage form .select-all-balance span,
+		#widgetComponentContainerOnBuyPage form .select-all-balance span,
+		#widgetComponentContainerOnMyAccount form .select-all-balance span {
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		#widgetComponentContainerOnHomePage form .sell-not-available-msg,
+		#widgetComponentContainerOnSellPage form .sell-not-available-msg,
+		#widgetComponentContainerOnBuyPage form .sell-not-available-msg,
+		#widgetComponentContainerOnMyAccount form .sell-not-available-msg {
+			margin: 30px;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates,
+		#widgetComponentContainerOnSellPage .widgetRates,
+		#widgetComponentContainerOnBuyPage .widgetRates,
+		#widgetComponentContainerOnMyAccount .widgetRates {
+			position: relative;
+			top: 2px;
+			margin: 12px 0;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span,
+		#widgetComponentContainerOnSellPage .widgetRates span,
+		#widgetComponentContainerOnBuyPage .widgetRates span,
+		#widgetComponentContainerOnMyAccount .widgetRates span {
+			color: #474959;
+			font-size: 10px;
+			font-family: "Open Sans";
+			letter-spacing: 0;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span:first-child,
+		#widgetComponentContainerOnSellPage .widgetRates span:first-child,
+		#widgetComponentContainerOnBuyPage .widgetRates span:first-child,
+		#widgetComponentContainerOnMyAccount .widgetRates span:first-child {
+			float: left;
+			font-weight: bold;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span:last-child,
+		#widgetComponentContainerOnSellPage .widgetRates span:last-child,
+		#widgetComponentContainerOnBuyPage .widgetRates span:last-child,
+		#widgetComponentContainerOnMyAccount .widgetRates span:last-child {
+			float: right;
+		}
+
+		#widgetComponentContainerOnHomePage .abTestDisclaimer,
+		#widgetComponentContainerOnSellPage .abTestDisclaimer,
+		#widgetComponentContainerOnBuyPage .abTestDisclaimer,
+		#widgetComponentContainerOnMyAccount .abTestDisclaimer {
+			position: relative;
+			font-size: 10px;
+			text-align: left;
+			color: #fff;
+			line-height: 1.3;
+			margin: 0 10px;
+		}
+
+		#widgetComponentContainerOnMyAccount .abTestDisclaimer {
+			color: #474959;
+			top: 22px;
+		}
+
+		#widgetComponentContainerOnHomePage .abTestDisclaimer {
+			margin: 0 5px;
+		}
+
+		@media only screen and (min-width: 1201px) {
+			#widgetComponentContainerOnHomePage .abTestDisclaimerA {
+				top: 52px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+			#widgetComponentContainerOnHomePage .abTestDisclaimerA {
+				top: 63px;
+			}
+		}
+
+		@media only screen and (min-width: 1201px) {
+
+			#widgetComponentContainerOnHomePage .abTestDisclaimerB,
+			#widgetComponentContainerOnHomePage .abTestDisclaimerC {
+				top: 44px;
+			}
+		}
+
+		@media only screen and (max-width: 1200px) {
+
+			#widgetComponentContainerOnHomePage .abTestDisclaimerB,
+			#widgetComponentContainerOnHomePage .abTestDisclaimerC {
+				top: 55px;
+			}
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates {
+			position: relative;
+			top: 2px;
+			margin: 12px 0;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span {
+			color: #474959;
+			font-size: 10px;
+			font-family: "Open Sans";
+			letter-spacing: 0;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span:first-child {
+			float: left;
+			font-weight: bold;
+		}
+
+		#widgetComponentContainerOnHomePage .widgetRates span:last-child {
+			float: right;
+		}
+
+		#widgetComponentContainerOnHomePage .abTestDisclaimer {
+			position: relative;
+			font-size: 10px;
+			text-align: left;
+			color: #fff;
+			line-height: 1.3;
+			margin: 0 10px;
+		}
+
+		#widgetComponentContainerOnMyAccount .abTestDisclaimer {
+			color: #474959;
+			top: 22px;
+		}
+
+		.widget-buy-comments,
+		.widget-sell-comments {
+			max-width: 310px;
+			color: #474959 !important;
+			font-size: 10px !important;
+			text-align: left;
+			margin: 0 auto;
+			line-height: 1.5 !important;
+			padding-top: 10px;
+		}
+
+		._shadow-depth-1 {
+			box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12),
+				0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+		}
+
+		._shadow-depth-6 {
+			box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+				0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+		}
+
+		._shadow-depth-12 {
+			box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14),
+				0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+		}
+
+		._text-danger {
+			color: #dc2a2a;
+		}
+
+		._text-danger[href]:focus,
+		._text-danger[href]:hover {
+			color: #dc2a2a;
+		}
+
+		._bg-danger {
+			background-color: #dc2a2a;
+		}
+
+		._border-danger {
+			border-color: #dc2a2a;
+		}
+
+		._border-top-danger {
+			border-top-color: #dc2a2a;
+		}
+
+		._border-bottom-danger {
+			border-bottom-color: #dc2a2a;
+		}
+
+		._border-left-danger {
+			border-left-color: #dc2a2a;
+		}
+
+		._border-right-danger {
+			border-right-color: #dc2a2a;
+		}
+
+		._text-warning {
+			color: #ff9f1c;
+		}
+
+		._text-warning[href]:focus,
+		._text-warning[href]:hover {
+			color: #ff9f1c;
+		}
+
+		._bg-warning {
+			background-color: #ff9f1c;
+		}
+
+		._border-warning {
+			border-color: #ff9f1c;
+		}
+
+		._border-top-warning {
+			border-top-color: #ff9f1c;
+		}
+
+		._border-bottom-warning {
+			border-bottom-color: #ff9f1c;
+		}
+
+		._border-left-warning {
+			border-left-color: #ff9f1c;
+		}
+
+		._border-right-warning {
+			border-right-color: #ff9f1c;
+		}
+
+		._bg-alert-danger {
+			background-color: #f2dede;
+		}
+
+		._border-alert-danger {
+			border-color: #ebccd1;
+		}
+
+		._bg-alert-warning {
+			background-color: #fcf8e3;
+		}
+
+		._border-alert-warning {
+			border-color: #faebcc;
+		}
+
+		._bg-alert-sucess {
+			background-color: #dff0d8;
+		}
+
+		._border-alert-sucess {
+			border-color: #d6e9c6;
+		}
+
+		._bg-alert-info {
+			background-color: #bce8f1;
+		}
+
+		._border-alert-info {
+			border-color: #afdaff;
+		}
+
+		._bg-orange-400 {
+			background-color: #ef8b0c;
+		}
+
+		._bg-orange-500 {
+			background-color: #dc800b;
+		}
+
+		._text-black {
+			color: #000;
+		}
+
+		._text-white {
+			color: #fff;
+		}
+
+		._bg-white {
+			background-color: #fff;
+		}
+
+		._text-grey-200 {
+			color: #f3f5f8;
+		}
+
+		._text-grey-200[href]:focus,
+		._text-grey-200[href]:hover {
+			color: #f3f5f8;
+		}
+
+		._bg-grey-200 {
+			background-color: #f3f5f8;
+		}
+
+		._border-grey-200 {
+			border-color: #f3f5f8;
+		}
+
+		._border-top-grey-200 {
+			border-top-color: #f3f5f8;
+		}
+
+		._border-bottom-grey-200 {
+			border-bottom-color: #f3f5f8;
+		}
+
+		._border-left-grey-200 {
+			border-left-color: #f3f5f8;
+		}
+
+		._border-right-grey-200 {
+			border-right-color: #f3f5f8;
+		}
+
+		._text-grey-300 {
+			color: #b5b7c3;
+		}
+
+		._text-grey-300[href]:focus,
+		._text-grey-300[href]:hover {
+			color: #b5b7c3;
+		}
+
+		._bg-grey-300 {
+			background-color: #b5b7c3;
+		}
+
+		._border-grey-300 {
+			border-color: #b5b7c3;
+		}
+
+		._border-top-grey-300 {
+			border-top-color: #b5b7c3;
+		}
+
+		._border-bottom-grey-300 {
+			border-bottom-color: #b5b7c3;
+		}
+
+		._border-left-grey-300 {
+			border-left-color: #b5b7c3;
+		}
+
+		._border-right-grey-300 {
+			border-right-color: #b5b7c3;
+		}
+
+		._text-grey-400 {
+			color: #acacb6;
+		}
+
+		._text-grey-400[href]:focus,
+		._text-grey-400[href]:hover {
+			color: #acacb6;
+		}
+
+		._bg-grey-400 {
+			background-color: #acacb6;
+		}
+
+		._border-grey-400 {
+			border-color: #acacb6;
+		}
+
+		._border-top-grey-400 {
+			border-top-color: #acacb6;
+		}
+
+		._border-bottom-grey-400 {
+			border-bottom-color: #acacb6;
+		}
+
+		._border-left-grey-400 {
+			border-left-color: #acacb6;
+		}
+
+		._border-right-grey-400 {
+			border-right-color: #acacb6;
+		}
+
+		._text-grey-600 {
+			color: #636371;
+		}
+
+		._text-grey-600[href]:focus,
+		._text-grey-600[href]:hover {
+			color: #636371;
+		}
+
+		._bg-grey-600 {
+			background-color: #636371;
+		}
+
+		._border-grey-600 {
+			border-color: #636371;
+		}
+
+		._border-top-grey-600 {
+			border-top-color: #636371;
+		}
+
+		._border-bottom-grey-600 {
+			border-bottom-color: #636371;
+		}
+
+		._border-left-grey-600 {
+			border-left-color: #636371;
+		}
+
+		._border-right-grey-600 {
+			border-right-color: #636371;
+		}
+
+		._text-grey-700 {
+			color: #474959;
+		}
+
+		._text-grey-700[href]:focus,
+		._text-grey-700[href]:hover {
+			color: #474959;
+		}
+
+		._bg-grey-700 {
+			background-color: #474959;
+		}
+
+		._border-grey-700 {
+			border-color: #474959;
+		}
+
+		._border-top-grey-700 {
+			border-top-color: #474959;
+		}
+
+		._border-bottom-grey-700 {
+			border-bottom-color: #474959;
+		}
+
+		._border-left-grey-700 {
+			border-left-color: #474959;
+		}
+
+		._border-right-grey-700 {
+			border-right-color: #474959;
+		}
+
+		._text-grey-800 {
+			color: #040000;
+		}
+
+		._text-grey-800[href]:focus,
+		._text-grey-800[href]:hover {
+			color: #040000;
+		}
+
+		._bg-grey-800 {
+			background-color: #040000;
+		}
+
+		._border-grey-800 {
+			border-color: #040000;
+		}
+
+		._border-top-grey-800 {
+			border-top-color: #040000;
+		}
+
+		._border-bottom-grey-800 {
+			border-bottom-color: #040000;
+		}
+
+		._border-left-grey-800 {
+			border-left-color: #040000;
+		}
+
+		._border-right-grey-800 {
+			border-right-color: #040000;
+		}
+
+		._text-blue-100 {
+			color: #d9edf7;
+		}
+
+		._text-blue-100[href]:focus,
+		._text-blue-100[href]:hover {
+			color: #d9edf7;
+		}
+
+		._bg-blue-100 {
+			background-color: #d9edf7;
+		}
+
+		._border-blue-100 {
+			border-color: #d9edf7;
+		}
+
+		._border-top-blue-100 {
+			border-top-color: #d9edf7;
+		}
+
+		._border-bottom-blue-100 {
+			border-bottom-color: #d9edf7;
+		}
+
+		._border-left-blue-100 {
+			border-left-color: #d9edf7;
+		}
+
+		._border-right-blue-100 {
+			border-right-color: #d9edf7;
+		}
+
+		._text-blue-200 {
+			color: #bce8f1;
+		}
+
+		._text-blue-200[href]:focus,
+		._text-blue-200[href]:hover {
+			color: #bce8f1;
+		}
+
+		._bg-blue-200 {
+			background-color: #bce8f1 !important;
+		}
+
+		._border-blue-200 {
+			border-color: #bce8f1;
+		}
+
+		._border-top-blue-200 {
+			border-top-color: #bce8f1;
+		}
+
+		._border-bottom-blue-200 {
+			border-bottom-color: #bce8f1;
+		}
+
+		._border-left-blue-200 {
+			border-left-color: #bce8f1;
+		}
+
+		._border-right-blue-200 {
+			border-right-color: #bce8f1;
+		}
+
+		._text-blue-300 {
+			color: #afdaff;
+		}
+
+		._text-blue-300[href]:focus,
+		._text-blue-300[href]:hover {
+			color: #afdaff;
+		}
+
+		._bg-blue-300 {
+			background-color: #afdaff !important;
+		}
+
+		._border-blue-300 {
+			border-color: #afdaff;
+		}
+
+		._border-top-blue-300 {
+			border-top-color: #afdaff;
+		}
+
+		._border-bottom-blue-300 {
+			border-bottom-color: #afdaff;
+		}
+
+		._border-left-blue-300 {
+			border-left-color: #afdaff;
+		}
+
+		._border-right-blue-300 {
+			border-right-color: #afdaff;
+		}
+
+		._bg-blue-400 {
+			background-color: #8fcbff !important;
+		}
+
+		._text-blue-500 {
+			color: #0f8fff;
+		}
+
+		._text-blue-500[href]:focus,
+		._text-blue-500[href]:hover {
+			color: #0f8fff;
+		}
+
+		._bg-blue-500 {
+			background-color: #0f8fff;
+		}
+
+		._border-blue-500 {
+			border-color: #0f8fff;
+		}
+
+		._border-top-blue-500 {
+			border-top-color: #0f8fff;
+		}
+
+		._border-bottom-blue-500 {
+			border-bottom-color: #0f8fff;
+		}
+
+		._border-left-blue-500 {
+			border-left-color: #0f8fff;
+		}
+
+		._border-right-blue-500 {
+			border-right-color: #0f8fff;
+		}
+
+		._text-blue-600 {
+			color: #127de8;
+		}
+
+		._text-blue-600[href]:focus,
+		._text-blue-600[href]:hover {
+			color: #127de8;
+		}
+
+		._bg-blue-600 {
+			background-color: #127de8 !important;
+		}
+
+		._border-blue-600 {
+			border-color: #127de8;
+		}
+
+		._border-top-blue-600 {
+			border-top-color: #127de8;
+		}
+
+		._border-bottom-blue-600 {
+			border-bottom-color: #127de8;
+		}
+
+		._border-left-blue-600 {
+			border-left-color: #127de8;
+		}
+
+		._border-right-blue-600 {
+			border-right-color: #127de8;
+		}
+
+		._text-blue-800 {
+			color: #1f2374;
+		}
+
+		._text-blue-800[href]:focus,
+		._text-blue-800[href]:hover {
+			color: #1f2374;
+		}
+
+		._bg-blue-800 {
+			background-color: #1f2374;
+		}
+
+		._border-blue-800 {
+			border-color: #1f2374;
+		}
+
+		._border-top-blue-800 {
+			border-top-color: #1f2374;
+		}
+
+		._border-bottom-blue-800 {
+			border-bottom-color: #1f2374;
+		}
+
+		._border-left-blue-800 {
+			border-left-color: #1f2374;
+		}
+
+		._border-right-blue-800 {
+			border-right-color: #1f2374;
+		}
+
+		._text-zengo {
+			color: #35c4ba !important;
+		}
+
+		._bg-loyalty-program-primary {
+			background-color: #cfe9ff !important;
+		}
+
+		.dsm-input-label {
+			font-family: "Open Sans";
+			font-weight: bold;
+			color: #474959;
+			font-size: 16px;
+			margin: 9px 0 2px;
+			line-height: 22px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<!-- app -->
+	<div class="app">
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="header__body row-flex j-between">
+					<a href="https://www.coinmama.com/" class="header__logo logo col">
+						<svg viewBox="0 0 192 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M19.8986 4.78896H15.7113V8.99137H18.9704C19.3623 7.30075 22.1126 7.13514 22.1126 9.57792C22.1126 11.1857 19.4448 11.5929 18.9704 9.81254H16.7564V12.1449H11.8677C11.5927 13.3249 11.7852 14.2979 11.8677 15.2984C12.3352 15.2984 12.8028 15.3053 13.2704 15.2915C14.5286 15.2708 14.3155 14.9879 14.3155 17.6308H20.9438C21.4801 15.6159 24.2029 16.2921 24.2029 17.8654C24.2029 18.7901 23.5703 19.6182 22.5733 19.6182C21.1982 19.6182 21.3219 18.452 20.71 18.452H11.8677V21.9574H15.4775V25.3387C15.4775 25.7458 15.56 25.7941 15.5944 26.1599H23.0409C23.474 24.2967 26.1831 24.6348 26.1831 26.5118C26.1831 26.9465 26.0318 27.4158 25.8049 27.6504C25.6193 27.8298 25.0005 28.1472 24.6704 28.1472C23.1921 28.1472 23.3159 26.9741 22.6902 26.9741H12.2184C11.682 26.9741 11.8677 27.6366 11.8677 28.9615C13.5454 28.9615 14.7762 28.7062 14.7762 29.3134V32.4669H13.0297C12.4453 32.4669 12.514 32.5704 11.9846 32.5842C11.9846 34.0679 11.7714 34.9166 12.3352 34.9166H18.7366C19.1835 34.9166 19.0873 34.5164 19.4517 34.1231C20.8269 32.6395 23.3984 34.7027 21.6795 36.3588C21.3013 36.7246 21.1156 36.7867 20.4831 36.7867C19.4036 36.7867 19.3004 35.6205 18.7366 35.6205H14.0817C13.8135 35.6205 13.731 35.7033 13.731 35.9724V38.8913C11.1389 38.8913 12.1083 38.5532 12.1015 43.211C12.1015 44.8051 12.1015 46.3991 12.1015 48C12.569 47.6826 13.2153 46.1162 13.4973 45.5434L16.0551 40.4094C16.282 40.0368 16.7083 39.7677 17.1208 39.6021C18.1934 39.1673 22.6833 39.4227 25.7568 38.5808C26.9326 38.2634 27.3245 37.9528 27.9296 36.904C29.2429 34.613 26.19 34.0334 28.7272 33.0328C30.6249 32.2875 29.4904 31.2317 29.3254 30.5969C29.7379 29.9827 30.3705 30.0794 30.3705 29.1961C30.3705 28.23 28.6653 27.4296 29.7173 26.5532C30.1711 26.1806 32.1169 26.1944 32.1169 24.8764C32.1169 23.2961 29.0916 19.9218 29.0916 17.8654L29.5591 15.4158C29.5591 11.4756 30.123 8.28062 27.1939 5.2927C26.3138 4.38873 27.4895 4.36113 25.3443 1.89764C24.1548 0.53134 23.6734 0.110408 22.8071 0H19.8986V4.78896Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M40.6085 22.7717C40.6085 26.7671 41.0417 29.9414 43.4895 32.7292C47.3262 37.0765 55.144 37.111 59.9295 34.5647L58.7469 30.9558C57.7224 31.0317 57.3442 32.2323 52.1324 32.2323C47.6425 32.2323 45.2634 28.4992 45.2634 23.9379C45.2634 20.3359 45.9854 17.1685 49.4164 15.4917C51.6786 14.3876 54.8689 14.843 57.0829 15.6987C57.5299 15.8712 58.0249 16.1403 58.4169 16.2301L59.6958 12.6142C59.3313 12.5314 59.2626 12.4624 58.9738 12.283C57.3442 11.2824 54.1882 10.8615 52.2493 10.8615C49.7052 10.8615 46.4805 11.8827 44.7134 13.5734C44.3902 13.8839 44.1771 13.9529 43.902 14.2772L43.2695 15.0501C42.6369 15.8229 42.0112 16.9201 41.6399 17.8517C41.1036 19.1904 40.6085 20.8603 40.6085 22.7717Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M69.3562 32.467H68.8887C63.4086 32.467 63.0717 20.6671 69.0055 20.6671C74.2655 20.6671 74.128 27.9472 72.5672 30.5487C71.9896 31.5147 70.8345 32.467 69.3562 32.467ZM60.2802 26.3945C60.2802 30.0449 61.7447 33.6263 65.0451 35.2686C67.4722 36.4762 70.6007 36.5659 73.0416 35.3445C74.2243 34.7511 74.6162 34.3577 75.4894 33.4883C78.3085 30.7005 78.6454 24.5659 76.4039 20.8327C75.6819 19.632 74.4168 18.4244 73.1585 17.7896C69.9269 16.168 64.9144 16.7545 62.556 19.8045C61.1259 21.6401 60.2802 23.8414 60.2802 26.3945Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M88.3197 18.2175V35.7379H92.624V20.9018C96.0412 20.9018 99.376 19.011 99.376 26.6292V35.7379H103.33C103.598 35.7379 103.68 35.6551 103.68 35.386C103.68 31.9909 103.983 23.8552 103 21.1226C101.844 17.9138 98.7022 16.9064 95.5324 16.9271L88.8423 17.8103C88.526 17.8931 88.3197 17.8517 88.3197 18.2175Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M107.29 18.2175V35.7379H109.614V20.0875C109.614 19.6528 110.364 19.6252 110.824 19.5493C112.378 19.3008 115.355 19.1145 116.621 20.0668C118.36 21.3779 118.339 24.3037 118.339 26.7465V35.7379H120.67C120.67 33.1502 120.904 24.4348 120.327 22.068C120.23 21.6746 120.1 21.3779 120.086 20.9018C122.162 19.5079 123.008 19.3837 125.559 19.3837C128.997 19.3837 129.244 22.7925 129.279 25.463C129.286 26.1255 129.403 26.2704 129.403 26.9742L129.396 35.7379H131.727V26.7465C131.727 22.5027 131.403 19.3423 128.578 17.8724C126.707 16.8995 123.146 17.0651 121.097 18.0588C119.921 18.6315 119.825 18.7971 119.158 19.1559C118.752 18.8799 118.608 18.5901 118.161 18.2865C116.999 17.486 115.018 17.0789 113.76 17.2307C111.175 17.5481 111.972 17.1479 108.768 17.8379C108.177 17.9621 107.833 18.0933 107.29 18.2175Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M151.625 18.2174V35.7378H153.949V20.0874C153.949 19.6527 154.699 19.6251 155.159 19.5492C156.61 19.3146 157.353 19.3836 158.838 19.3836C162.503 19.3836 162.675 23.2686 162.675 26.1599V35.7378H165.006C165.006 33.0535 165.157 25.1593 164.841 22.9373C164.731 22.1714 164.476 21.5365 164.421 20.9017C166.47 19.5285 167.343 19.3836 169.894 19.3836C173.779 19.3836 173.731 23.724 173.731 26.7464V35.7378H176.062V25.8079C176.062 21.8747 175.429 18.866 172.59 17.7274C171.139 17.1547 169.33 17.0926 167.563 17.3962C165.459 17.7619 164.875 18.4175 163.493 19.1558C162.867 18.728 162.805 18.2381 161.265 17.6515C159.615 17.0098 156.48 17.203 154.644 17.5135C153.605 17.6929 152.608 17.9897 151.625 18.2174Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M136.725 30.4796C136.725 29.8517 136.835 29.1133 137.124 28.6579C137.392 28.237 137.743 27.9402 138.121 27.678C139.434 26.7464 142.295 26.6843 144.028 27.0087C144.447 27.0846 144.901 27.2916 145.341 27.3261V33.7505C144.433 33.7505 143.636 33.9851 142.549 33.9851C140.768 33.9851 139.345 34.1369 137.839 33.1018C137.159 32.6395 136.725 31.6044 136.725 30.4796ZM136.609 19.9701C139.228 19.356 138.052 19.2663 141.38 19.2663C142.914 19.2663 144.11 19.9908 144.681 20.9776C145.341 22.1162 145.341 23.586 145.341 25.3387C142.419 24.6556 138.768 24.4831 136.258 26.2703C132.744 28.789 133.769 36.0828 140.218 36.0828C142.453 36.0828 144.976 36.0207 147.142 35.4411C147.465 35.3583 147.665 35.4066 147.665 35.034V23.4756C147.665 21.3226 146.895 19.4043 145.224 18.2174C143.182 16.7614 139.565 17.0374 137.282 17.6102C135.605 18.0311 136.567 18.038 136.609 19.9701Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M181.061 30.3622C181.061 26.843 184.767 26.8568 187.228 26.8568C188.136 26.8568 188.92 27.1535 189.676 27.326V33.7504C188.768 33.7504 187.971 33.985 186.884 33.985C185.324 33.985 183.371 34.1161 182.195 33.081C181.466 32.4324 181.061 31.6871 181.061 30.3622ZM180.717 17.8654C180.717 18.7556 180.944 19.1972 180.944 19.9701C183.55 19.3628 182.566 19.2662 185.716 19.2662C187.194 19.2662 188.273 19.8183 189.03 20.9706C189.752 22.0747 189.676 23.579 189.676 25.3387C188.713 24.8763 186.678 24.8763 185.482 24.8763C183.777 24.8763 181.941 25.3939 180.882 26.0908C178.833 27.4364 178.737 29.058 178.737 31.0661C178.737 32.6532 179.569 33.9919 180.462 34.7027C183.9 37.4422 190.185 35.4272 192 35.3858V23.2409C192 19.6112 189.566 17.1685 185.949 17.1685C182.91 17.1685 183.405 17.2375 180.717 17.8654Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M80.5226 35.7379H84.7168V17.4032H80.5226V35.7379Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M79.9449 12.0276C79.9449 15.6711 85.1774 15.2571 85.1774 12.3795C85.1774 11.2548 85.0743 10.199 83.7404 9.61933C81.8014 8.77746 79.9449 10.1162 79.9449 12.0276Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.51831 37.9528H10.9395V33.5157H6.51831V37.9528Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M5.58313 14.8292H9.54359V10.8615H5.58313V14.8292Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M14.8929 0.234618V3.74008H18.5027V0.234618L16.1718 0.11731C15.5255 0.11731 15.4843 0.234618 14.8929 0.234618Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M10.9394 9.22592H13.731C14.0473 9.22592 14.0541 9.17072 14.3154 9.10861V5.83777H10.9394V9.22592Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M6.05074 18.6866C5.74821 22.337 5.59006 21.8402 8.72543 21.8402C9.30988 21.8402 9.0761 19.7631 9.0761 18.6866L7.09586 18.5693C6.51142 18.5693 6.58018 18.6728 6.05074 18.6866Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M6.63517 24.5245C6.63517 27.8644 5.96821 27.2088 9.42674 27.2088V24.5245L7.68029 24.4072C7.09584 24.4072 7.15773 24.5107 6.63517 24.5245Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M7.56341 40.4094C7.56341 43.5561 7.00647 42.9764 9.89431 42.9764C10.465 42.9764 10.2381 41.548 10.2381 40.4094C9.44051 40.3404 9.87369 40.2921 8.60854 40.2921C8.02409 40.2921 8.09285 40.3956 7.56341 40.4094Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M1.0451 31.6457C1.0451 32.1426 1.57454 32.0115 2.09023 32.0046C2.55778 31.9977 3.02534 31.9977 3.49289 31.9977C3.67854 31.1972 3.67854 30.2311 3.49289 29.4307H1.0451V31.6457Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M11.29 25.6905H13.6141V23.7101C13.6141 23.441 13.5316 23.3582 13.2634 23.3582H11.29V25.6905Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M0 17.8653V19.6181H2.09712C2.09712 17.0925 2.48904 17.5203 0.350666 17.5203C0.0825097 17.5203 0 17.5962 0 17.8653H0Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.701294 22.889V24.8763H2.79154V22.889C1.75329 22.6474 1.5814 22.7993 0.701294 22.889Z" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M7.44653 29.1961V30.8315H9.42677V28.8442C8.09974 28.8442 7.44653 28.6579 7.44653 29.1961Z" />
+						</svg>
+					</a>
+					<div class="header__buttons col">
+						<a href="https://www.coinmama.com/login" class="header__btn btn-trans">Sign In</a>
+						<a href="https://www.coinmama.com/signup" class="header__btn btn-blue">Create Account</a>
+					</div>
+					<!-- <div class="navbar__toggle">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div> -->
+				</div>
+			</div>
+		</header>
+		<!-- Main -->
+		<div class="main">
+			<!-- Banner -->
+			<section class="banner">
+				<div class="container">
+					<div class="banner__body row-flex">
+						<div class="banner__column col">
+							<div class="change">
+								<div class="change__inner">
+									<div id="widgetComponentContainerOnHomePage" class="widgetComponentAbVariationA"></div>
+									<script type="text/javascript" src="/dist/widget.min.js"
+										data-widget='{"cont":"widgetComponentContainerOnHomePage","config":{"mode":"home","abtMarketPrice":"A"}}'></script>
+									<link rel="stylesheet" type="text/css" href="/dist/widget.min.css">
+								</div>
+							</div>
+						</div>
+						<div class="banner__column col">
+							<div class="banner__right-text">
+								<h1 class="banner__title">Your account is already verified!</h1>
+								<p class="banner__subtitle">
+									The hard part is behind you. You're just a few clicks away from owning Bitcoin
+								</p>
+								<a href="https://www.coinmama.com/signup" class="banner__btn btn upper">GET BITCOIN</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Steps -->
+			<section class="steps">
+				<div class="container">
+					<h2 class="steps__title title">3 Easy Steps to Own Crypto</h2>
+					<div class="steps__body row-flex">
+						<div class="steps-column col">
+							<!-- step1 -->
+							<a href="https://www.coinmama.com/signup" class="step">
+								<div class="step__circle">
+									<span>1</span>
+								</div>
+								<div class="step__body">
+									<h3 class="step__title">Create your account</h3>
+									<p class="step__text">
+										Get started is fast, secure and designed to keep your personal info safe.
+									</p>
+								</div>
+							</a>
+							<!-- step 2 -->
+							<div class="step">
+								<div class="step__circle">
+									<span>2</span>
+								</div>
+								<div class="step__body">
+									<h3 class="step__title">Get verified</h3>
+									<p class="step__text">
+										To prevent identity theft or fraud, you'll need a photo ID to make sure it's really you.
+									</p>
+								</div>
+							</div>
+							<!-- step 3 -->
+							<div class="step">
+								<div class="step__circle">
+									<span>3</span>
+								</div>
+								<div class="step__body">
+									<h3 class="step__title">Buy Crypto</h3>
+									<p class="step__text">
+										Get started with as little as $100. Pay with a credit, debit card, bank transfer or Apple Pay.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps__btn">
+						<a href="https://www.coinmama.com/signup" class="btn upper">GET STARTED</a>
+					</div>
+				</div>
+			</section>
+			<!-- Why -->
+			<section class="why">
+				<div class="container">
+					<h2 class="why__title title">
+						Why is Coinmama <br>
+						the #1 Crypto Exchange?
+					</h2>
+					<div class="why__body row-flex">
+						<div class="why__column col">
+							<div class="why__img">
+								<img src="global_icon.svg" alt="" />
+							</div>
+							<p class="why__lable">
+								Buy Crypto <br>
+								on the go in 190 countries
+							</p>
+						</div>
+						<div class="why__column col">
+							<div class="why__img">
+								<img src="exchange_icon.svg" alt="" />
+							</div>
+							<p class="why__lable">
+								$100M+ <br>
+								Currency transacted
+							</p>
+						</div>
+						<div class="why__column col">
+							<div class="why__img">
+								<img src="customers_icon.svg" alt="" />
+							</div>
+							<p class="why__lable">
+								2,500,000+ <br>
+								Happy Customers
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Customers -->
+			<section class="customers">
+				<div class="container">
+					<h2 class="customers__title title">Our Customers Love Us</h2>
+					<div class="customers__body">
+						<div class="customers__column">
+							<div class="customers__img">
+								<img src="userW.png" alt="" />
+							</div>
+							<div class="customers__name">Teresa Mae, US</div>
+							<div class="customers__text">
+								"Extremely attentive and swiftly responsive. It is obviously run by very intelligent and
+								professional entities that are very good at their line of work"
+							</div>
+						</div>
+						<div class="customers__column">
+							<div class="customers__img">
+								<img src="userM.png" alt="" />
+							</div>
+							<div class="customers__name">PatrickD, GB</div>
+							<div class="customers__text">
+								"Great customer experience with Ivan who helped me sort out an issue with my email. Very
+								impressive. TY."
+							</div>
+						</div>
+						<div class="customers__column">
+							<div class="customers__img">
+								<img src="userM.png" alt="" />
+							</div>
+							<div class="customers__name">Sylvio Sardella, Italy</div>
+							<div class="customers__text">
+								"Amazing customer service. I had the chance to talk to Alex and he solved my problem in a second.
+								Moreover the atmosphere in the chat is friendly and positive. Well done guys!"
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Anytime -->
+			<section class="anytime">
+				<div class="container">
+					<div class="anytime__body row-flex">
+						<h2 class="anytime__title title">
+							Crypto market can rally anytime.
+							<span>Buy today and be ready.</span>
+						</h2>
+						<a href="https://www.coinmama.com/signup" class="anytime__btn btn upper">GET STARTED</a>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<div class="copyright text-center">
+					Copyright © 2021 Coinmama. All rights reserved. Coinmama is a property of New Bit Ventures Ltd and is
+					operated by Cmama Ltd. company #672704
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="main.min.js"></script>
+	<!-- <script src="js/vendor.min.js"></script> -->
+
+</body>
+
+</html>
